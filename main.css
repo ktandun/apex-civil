@@ -206,9 +206,11 @@ button:hover {
 .hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("images/hero.jpg");
+    url("images/optimized/hero-800.jpg");
 
   background-position: center;
+  background-size: cover;
+
   background-repeat: no-repeat;
   position: relative;
   height: 100vh;
@@ -262,17 +264,17 @@ button:hover {
 
 @media (min-width: 1200px) {
   .hero {
-    & .hero-text-wrapper {
-      position: absolute;
-      top: var(--padding);
-      left: var(--padding);
-      right: var(--padding);
-      max-width: 1296px;
-      top: 35%;
-      & .hero-text {
-        font-size: var(--heading-1);
-      }
-    }
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("images/optimized/hero-1200.jpg");
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("images/hero.jpg");
   }
 }
 
