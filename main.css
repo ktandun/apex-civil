@@ -270,7 +270,15 @@ button:hover {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("images/optimized/hero-1600.jpg");
+  }
+}
+
+@media (min-width: 2000px) {
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
