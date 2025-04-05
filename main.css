@@ -387,9 +387,6 @@ button:hover {
 }
 
 .delivering-quality {
-  max-width: 1440px;
-  margin: auto;
-
   padding-top: 88px;
   padding-bottom: 88px;
 
@@ -418,8 +415,8 @@ button:hover {
       & img {
         object-fit: cover;
         border-radius: 18px;
-        width: auto;
         width: 100%;
+        height: auto;
       }
     }
 
@@ -455,14 +452,6 @@ button:hover {
     & .content {
       flex-direction: row;
 
-      & .description {
-        flex: 1;
-      }
-
-      &:last-child {
-        flex-direction: row;
-      }
-
       & .image {
         flex: 1;
         & img {
@@ -470,7 +459,23 @@ button:hover {
           max-height: min(500px, 28vw);
         }
       }
+
+      & .description {
+        flex: 1;
+        max-width: none;
+      }
+
+      &:last-child {
+        flex-direction: row;
+      }
     }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .delivering-quality {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -544,6 +549,14 @@ button:hover {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .what-we-do {
+    & .text {
+      padding-left: 120px;
+    }
+  }
+}
+
 /* Our Approach */
 .our-approach {
   background-color: var(--light);
@@ -564,6 +577,13 @@ button:hover {
   .our-approach {
     padding: 200px 32px;
     height: 600px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .our-approach {
+    padding: 200px 300px;
+    height: 300px;
   }
 }
 
@@ -634,6 +654,14 @@ button:hover {
     & .text {
       padding-left: 24px;
       padding-right: 32px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .who-we-are {
+    & .text {
+      padding-right: 120px;
     }
   }
 }
@@ -757,6 +785,13 @@ button:hover {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .hear-from-our-clients {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
 /* Featured Projects */
 .featured-projects {
   background-color: var(--light);
@@ -826,6 +861,14 @@ button:hover {
 
     & .description {
       margin-bottom: 80px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .featured-projects {
+    & .text {
+      padding-right: 120px;
     }
   }
 }
@@ -946,6 +989,17 @@ button:hover {
       & div:not(:last-child) {
         display: block;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    padding-left: 120px;
+    padding-right: 120px;
+
+    & .text {
+      padding-right: 120px;
     }
   }
 }
