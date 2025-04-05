@@ -479,6 +479,17 @@ button:hover {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .delivering-quality {
+    padding-left: max(120px, 10vw);
+    padding-right: max(120px, 10vw);
+
+    .content {
+      gap: 5vw;
+    }
+  }
+}
+
 /* What We Do */
 .what-we-do {
   background-color: var(--dark);
@@ -553,6 +564,15 @@ button:hover {
   .what-we-do {
     & .text {
       padding-left: 120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .what-we-do {
+    & .text {
+      padding-left: max(120px, 10vw);
+      padding-right: max(120px, 3vw);
     }
   }
 }
@@ -662,6 +682,15 @@ button:hover {
   .who-we-are {
     & .text {
       padding-right: 120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .who-we-are {
+    & .text {
+      padding-left: max(120px, 3vw);
+      padding-right: max(120px, 10vw);
     }
   }
 }
@@ -792,6 +821,13 @@ button:hover {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .hear-from-our-clients {
+    padding-left: max(120px, 10vw);
+    padding-right: max(120px, 10vw);
+  }
+}
+
 /* Featured Projects */
 .featured-projects {
   background-color: var(--light);
@@ -869,6 +905,15 @@ button:hover {
   .featured-projects {
     & .text {
       padding-right: 120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .featured-projects {
+    & .text {
+      padding-left: max(120px, 3vw);
+      padding-right: max(120px, 10vw);
     }
   }
 }
@@ -1000,6 +1045,17 @@ button:hover {
 
     & .text {
       padding-right: 120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    padding-left: max(120px, 10vw);
+    padding-right: max(120px, 10vw);
+
+    & .text {
+      padding-right: max(120px, 10vw);
     }
   }
 }
