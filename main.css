@@ -416,6 +416,7 @@ button:hover {
       align-items: center;
 
       & img {
+        object-fit: cover;
         border-radius: 18px;
         width: auto;
         width: 100%;
@@ -441,21 +442,31 @@ button:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .delivering-quality {
     padding-top: 220px;
     padding-bottom: 220px;
 
-    padding-left: max(8px, 15vw);
-    padding-right: max(8px, 15vw);
+    padding-left: 32px;
+    padding-right: 32px;
 
     gap: 88px;
 
     & .content {
       flex-direction: row;
 
+      & .description {
+        flex: 1;
+      }
+
+      &:last-child {
+        flex-direction: row;
+      }
+
       & .image {
+        flex: 1;
         & img {
+          min-height: 400px;
           max-height: min(500px, 28vw);
         }
       }
@@ -519,14 +530,16 @@ button:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .what-we-do {
     & .image {
       display: block;
     }
 
     & .text {
-      padding: 20px 120px;
+      padding-top: 64px;
+      padding-bottom: 64px;
+      padding-left: 32px;
     }
   }
 }
@@ -549,15 +562,8 @@ button:hover {
 
 @media (min-width: 768px) {
   .our-approach {
-    padding: 200px 600px;
+    padding: 200px 32px;
     height: 600px;
-
-    & p {
-      color: var(--granite);
-      text-align: center;
-      font-size: var(--heading-4);
-      font-weight: var(--font-bold);
-    }
   }
 }
 
@@ -616,16 +622,18 @@ button:hover {
   .who-we-are {
     gap: 24px;
     flex-direction: row;
+
     & .image {
       flex: 2;
+
       & img {
         height: 100%;
         min-height: 900px;
       }
     }
     & .text {
-      padding-right: 120px;
-      padding-left: 100px;
+      padding-left: 24px;
+      padding-right: 32px;
     }
   }
 }
@@ -736,9 +744,11 @@ button:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .hear-from-our-clients {
     padding: 120px;
+    padding-left: 32px;
+    padding-right: 32px;
     & .clients {
       flex-direction: row;
       padding: 12px;
@@ -798,16 +808,20 @@ button:hover {
 
 @media (min-width: 768px) {
   .featured-projects {
-    gap: 24px;
     flex-direction: row;
     & .image {
       flex: 2;
       & img {
         height: 100%;
+        min-height: 700px;
       }
     }
     & .text {
       padding: 48px 24px;
+      padding-left: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     & .description {
@@ -919,10 +933,19 @@ button:hover {
 
 @media (min-width: 768px) {
   .footer {
-    padding: 100px 100px;
-    flex-direction: row;
+    padding: 100px 32px;
+    flex-direction: column;
+
     & .footer-section {
       flex-direction: row;
+      display: flex;
+      align-items: baseline;
+    }
+
+    & .links {
+      & div:not(:last-child) {
+        display: block;
+      }
     }
   }
 }
