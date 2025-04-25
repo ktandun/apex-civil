@@ -1069,3 +1069,104 @@ button:hover {
     }
   }
 }
+
+/* Our Services Page */
+
+.our-services-section {
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+
+  & .image {
+    flex: 1;
+    & img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+  }
+
+  & .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+    padding: 32px 16px;
+
+    & p.big-title {
+      font-size: var(--heading-4);
+      font-weight: var(--font-bold);
+    }
+
+    & div.points {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      & p.description {
+        font-size: var(--heading-6);
+      }
+    }
+    & .read-more span {
+      font-size: var(--heading-5);
+    }
+  }
+}
+
+.our-services-section.dark {
+  background-color: var(--dark);
+  & .text {
+    & p.big-title {
+      color: var(--light);
+    }
+
+    & div.points {
+      & p.description {
+        color: var(--light);
+      }
+    }
+    & .read-more span {
+      color: var(--light);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .our-services-section {
+    gap: 24px;
+    flex-direction: row;
+
+    & .image {
+      & img {
+        height: 100%;
+        min-height: 900px;
+      }
+    }
+    & .text {
+      padding-left: 24px;
+      padding-right: 32px;
+    }
+  }
+
+  .our-services-section.flex-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .our-services-section {
+    & .text {
+      padding-right: 120px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .our-services-section {
+    & .text {
+      padding-left: max(120px, 3vw);
+      padding-right: max(120px, 10vw);
+    }
+  }
+}
