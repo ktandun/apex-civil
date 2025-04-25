@@ -37,6 +37,12 @@ html {
   background-color: var(--dark);
 }
 
+ul {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
 body {
   font-family: var(--font-poppins);
   font-optical-sizing: auto;
