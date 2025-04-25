@@ -21,6 +21,7 @@
   </head>
 
   <body>
+    
     <div class="hero">
       <div class="hero-text-wrapper">
         <div class="hero-text-top">Building the Future Today</div>
@@ -35,43 +36,45 @@
 
       <!-- navbar -->
       <div class="navbar-wrapper">
-        <div class="navbar">
-          <a href="/">
-            <picture>
-              <img src="images/logo.svg" alt="logo" />
-            </picture>
-          </a>
-          <div class="flex nav-links">
-            <a href="#" class="nav-link">Our Services</a>
-            <a href="#" class="nav-link">Key Projects</a>
-            <a href="#" class="nav-link">Our Team</a>
-            <a href="#" class="nav-link">Contact Us</a>
-            <a href="javascript:toggleNav();" class="hamburger-menu">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#ffffff"
-                style="width: 24px; height: 24px"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="nav-links-mobile">
-          <a href="#">Our Services</a>
-          <a href="#">Key Projects</a>
-          <a href="#">Our Team</a>
-          <a href="#">Contact Us</a>
-        </div>
-      </div>
+  <div class="navbar">
+    <a href="/">
+      <picture>
+        <img src="images/logo.svg" alt="logo" />
+      </picture>
+    </a>
+    <div class="flex nav-links">
+      <a href="#" class="nav-link">Our Services</a>
+      <a href="#" class="nav-link">Key Projects</a>
+      <a href="#" class="nav-link">Our Team</a>
+      <a href="#" class="nav-link">Contact Us</a>
+      <a href="javascript:toggleNav();" class="hamburger-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          style="width: 24px; height: 24px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="nav-links-mobile">
+    <a href="#">Our Services</a>
+    <a href="#">Key Projects</a>
+    <a href="#">Our Team</a>
+    <a href="#">Contact Us</a>
+  </div>
+</div>
     </div>
 
+
+    
     <!-- delivering quality -->
     <div class="delivering-quality-wrapper">
       <div class="delivering-quality">
@@ -308,50 +311,49 @@
       <button class="outline">Get in touch</button>
     </div>
 
-    <!-- footer -->
+
     <div class="footer">
-      <div class="footer-section">
-        <div>
-          <img src="images/logo.svg" />
-        </div>
-        <div class="contact">
-          <div class="title">Contact</div>
-          <div class="point">
-            <img src="images/location-marker.svg" />
-            <p>40A Invergarry Road,  Taupō 3330, New Zealand</p>
-          </div>
-          <div class="point">
-            <img src="images/mail.svg" />
-            <p>enquiries@apexcivil.co.nz</p>
-          </div>
-          <div class="point">
-            <img src="images/phone.svg" />
-            <p>0800 273 924</p>
-          </div>
-        </div>
+  <div class="footer-section">
+    <div>
+      <img src="images/logo.svg" />
+    </div>
+    <div class="contact">
+      <div class="title">Contact</div>
+      <div class="point">
+        <img src="images/location-marker.svg" />
+        <p>40A Invergarry Road,  Taupō 3330, New Zealand</p>
       </div>
-      <div class="footer-section">
-        <div class="social-media">
-          <img src="images/fb-logo.svg" />
-          <img src="images/linkedin-logo.svg" />
-        </div>
+      <div class="point">
+        <img src="images/mail.svg" />
+        <p>enquiries@apexcivil.co.nz</p>
       </div>
-      <div class="footer-section">
-        <div class="links">
-          <div>Our Services</div>
-          <div>Key Projects</div>
-          <div>Our Team</div>
-          <div>Contact Us</div>
-        </div>
-        <div class="footer-logos">
-          <img src="images/sitewise.png" />
-          <img src="images/prequal.png" />
-        </div>
+      <div class="point">
+        <img src="images/phone.svg" />
+        <p>0800 273 924</p>
       </div>
     </div>
-
+  </div>
+  <div class="footer-section">
+    <div class="social-media">
+      <img src="images/fb-logo.svg" />
+      <img src="images/linkedin-logo.svg" />
+    </div>
+  </div>
+  <div class="footer-section">
+    <div class="links">
+      <div>Our Services</div>
+      <div>Key Projects</div>
+      <div>Our Team</div>
+      <div>Contact Us</div>
+    </div>
+    <div class="footer-logos">
+      <img src="images/sitewise.png" />
+      <img src="images/prequal.png" />
+    </div>
+  </div>
+</div>
     <script>
-      function toggleNav() {
+            function toggleNav() {
         const navLinksMobile = document.querySelector(".nav-links-mobile");
         navLinksMobile.classList.toggle("open");
 
