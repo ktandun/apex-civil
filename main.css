@@ -37,6 +37,11 @@ html {
   background-color: var(--dark);
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
+
 ul {
   margin: 0;
   box-sizing: border-box;
