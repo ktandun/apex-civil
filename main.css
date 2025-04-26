@@ -1136,21 +1136,27 @@ button:hover {
   flex-direction: column;
 
   & .image {
-    flex: 1;
+    flex: 0 0 50%;
+
     & img {
       width: 100%;
-      height: 450px;
+      height: 100%;
       object-fit: cover;
+      min-height: 500px;
     }
   }
 
   & .text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-    justify-content: center;
-    padding: 32px 16px;
+    flex: 0 0 50%;
+
+    & .wrapper {
+      padding: 16px 32px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 64px;
+    }
 
     & p.big-title {
       font-size: var(--heading-4);
@@ -1192,19 +1198,7 @@ button:hover {
 
 @media (min-width: 768px) {
   .our-services-section {
-    gap: 24px;
     flex-direction: row;
-
-    & .image {
-      & img {
-        height: 100%;
-        min-height: 900px;
-      }
-    }
-    & .text {
-      padding-left: 24px;
-      padding-right: 32px;
-    }
   }
 
   .our-services-section.flex-reverse {
@@ -1212,19 +1206,13 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .our-services-section {
-    & .text {
-      padding-right: 120px;
-    }
-  }
-}
-
 @media only screen and (min-width: 1200px) {
   .our-services-section {
     & .text {
-      padding-left: max(120px, 3vw);
-      padding-right: max(120px, 10vw);
+      & .wrapper {
+        padding-left: max(120px, 3vw);
+        padding-right: max(120px, 10vw);
+      }
     }
   }
 }
