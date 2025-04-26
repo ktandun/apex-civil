@@ -1350,6 +1350,10 @@ button:hover {
       font-size: var(--heading-4);
     }
 
+    & button.primary {
+      min-width: 200px;
+    }
+
     & .services {
       display: flex;
       flex-direction: column;
