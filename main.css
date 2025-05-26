@@ -280,12 +280,9 @@ button:hover {
   & .hero-text-wrapper {
     position: absolute;
     top: var(--padding-mobile);
-    left: var(--padding-mobile);
-    right: var(--padding-mobile);
+    left: 16px;
     color: var(--white);
     top: 30%;
-    margin-left: auto;
-    margin-right: auto;
 
     & .hero-text-top {
       font-size: var(--heading-2);
@@ -312,9 +309,7 @@ button:hover {
   .hero {
     & .hero-text-wrapper {
       position: absolute;
-      top: var(--padding-tablet);
-      left: var(--padding-tablet);
-      right: var(--padding-tablet);
+      left: 32px;
       max-width: 1296px;
       top: 35%;
       & .hero-text {
@@ -332,11 +327,26 @@ button:hover {
   }
 }
 
+@media (min-width: 1440px) {
+  .hero {
+    & .hero-text-wrapper {
+      left: max(120px, 15vw);
+    }
+  }
+}
+
 @media (min-width: 1600px) {
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url("images/optimized/hero-1600.jpg");
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero {
+    & .hero-text-wrapper {
+    }
   }
 }
 
@@ -451,7 +461,7 @@ button:hover {
 }
 
 @media only screen and (min-width: 1920px) {
- .navbar .nav-links {
+  .navbar .nav-links {
     gap: calc(1vw + 40px);
   }
 
