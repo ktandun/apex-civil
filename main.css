@@ -7,7 +7,6 @@
 
   --primary: #2860a2;
   --dark: #0d1a3a;
-  --white: white;
   --light: #fffdfa;
   --orange: #ff7b31;
   --granite: #19282f;
@@ -52,6 +51,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  color: var(--granite);
 }
 
 .font-size-3 {
@@ -75,18 +75,12 @@ body {
   font-weight: var(--font-bold);
 }
 
-.upperline {
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-color: var(--primary);
-}
-
 .primary {
   color: var(--primary);
 }
 
 .text-white {
-  color: var(--white);
+  color: var(--light);
 }
 
 .bg-primary {
@@ -214,23 +208,23 @@ button {
     font-size: var(--heading-5);
     background-color: var(--primary);
     border: 0px;
-    color: var(--white);
+    color: var(--light);
     border-radius: 38px;
   }
 
   &.dark {
     background-color: var(--dark);
     border: 0px;
-    color: var(--white);
+    color: var(--light);
   }
 
   &.outline {
     background-color: transparent;
     border: 1px;
     border-style: solid;
-    border-color: var(--white);
+    border-color: var(--light);
     border-radius: 38px;
-    color: var(--white);
+    color: var(--light);
   }
 
   &.default {
@@ -281,7 +275,7 @@ button:hover {
     position: absolute;
     top: var(--padding-mobile);
     left: 16px;
-    color: var(--white);
+    color: var(--light);
     top: 30%;
 
     & .hero-text-top {
@@ -373,7 +367,7 @@ button:hover {
     padding: 16px;
 
     & a {
-      color: var(--white);
+      color: var(--light);
       text-decoration: none;
     }
 
@@ -396,7 +390,7 @@ button:hover {
 
   .nav-links-mobile a {
     text-align: left;
-    color: var(--white);
+    color: var(--light);
     text-decoration: none;
     font-size: var(--heading-6);
     padding-left: 16px;
@@ -607,7 +601,7 @@ button:hover {
     justify-content: center;
 
     & p.big-title {
-      color: var(--white);
+      color: var(--light);
       font-size: var(--heading-4);
       font-weight: var(--font-bold);
     }
@@ -675,7 +669,6 @@ button:hover {
   padding: 160px 16px;
 
   & p {
-    color: var(--granite);
     text-align: center;
     font-size: var(--heading-4);
     font-weight: var(--font-bold);
@@ -720,7 +713,7 @@ button:hover {
     padding: 32px 16px;
 
     & p.big-title {
-      color: var(--white);
+      color: var(--light);
       font-size: var(--heading-4);
       font-weight: var(--font-bold);
     }
@@ -796,7 +789,6 @@ button:hover {
   padding-bottom: 90px;
 
   & p {
-    color: var(--granite);
     font-size: var(--heading-4);
     font-weight: var(--font-bold);
   }
@@ -859,7 +851,7 @@ button:hover {
 /* Hear From Our Clients */
 .hear-from-our-clients {
   background-color: var(--dark);
-  color: var(--white);
+  color: var(--light);
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -945,7 +937,6 @@ button:hover {
     }
 
     & .description {
-      color: var(--granite);
       font-weight: var(--font-bold);
       font-size: 40px;
       margin-bottom: 32px;
@@ -1010,7 +1001,7 @@ button:hover {
 /* Learn More */
 .learn-more {
   background-color: var(--primary);
-  color: var(--white);
+  color: var(--light);
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -1415,7 +1406,7 @@ button:hover {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: white;
+        color: var(--light);
         text-align: center;
         z-index: 2;
       }
