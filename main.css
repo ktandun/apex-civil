@@ -974,7 +974,7 @@ button:hover {
 
 /* Footer */
 .footer {
-  padding: 32px 16px;
+  padding: 32px var(--default-padding);
   color: var(--light);
   display: flex;
   flex-direction: column;
@@ -1053,7 +1053,7 @@ button:hover {
 
 @media (min-width: 768px) {
   .footer {
-    padding: 100px 32px;
+    padding: 100px var(--default-padding);
     flex-direction: column;
 
     & .footer-section {
@@ -1075,22 +1075,8 @@ button:hover {
 
 @media only screen and (min-width: 992px) {
   .footer {
-    padding-left: 120px;
-    padding-right: 120px;
-
     & .text {
-      padding-right: 120px;
-    }
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .footer {
-    padding-left: var(--padding-desktop-wide);
-    padding-right: var(--padding-desktop-wide);
-
-    & .text {
-      padding-right: max(120px, 10vw);
+      padding-right: var(--default-padding);
     }
   }
 }
@@ -1505,6 +1491,76 @@ button:hover {
 
     & .image {
       height: 785px;
+    }
+  }
+}
+
+/* key-projects */
+.key-projects {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
+  background-color: var(--light);
+
+  & .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    & .card {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+
+
+      & .title {
+        font-weight: var(--font-bold);
+        font-size: var(--heading-5);
+      }
+
+      & .details {
+        & span:first-child {
+          color: var(--orange);
+          font-weight: var(--font-bold);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .key-projects {
+    padding-top: 97px;
+    padding-bottom: 97px;
+
+    & .cards {
+      flex-direction: row;
+      gap: 16px;
+
+      & .card {
+        gap: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .key-projects {
+    padding-top: 129px;
+    padding-bottom: 129px;
+
+    & .cards {
+      gap: 24px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .key-projects {
+    & .cards {
+      gap: 24px;
     }
   }
 }

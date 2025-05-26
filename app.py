@@ -15,3 +15,4 @@ with app.app_context():
     render_to_file("our-services-civil-construction.html", "civil-construction.html")
     render_to_file("our-services-project-management.html", "project-management.html")
     render_to_file("our-services-land-development.html", "land-development.html")
+    render_to_file("key-projects.html", "key-projects.html")
