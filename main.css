@@ -1038,7 +1038,6 @@ button:hover {
   color: var(--light);
   display: flex;
   flex-direction: column;
-  gap: 24px;
 
   & .contact {
     display: flex;
@@ -1071,14 +1070,18 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &.most-bottom {
+      align-items: baseline;
+    }
   }
 
   & .social-media {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    margin-bottom: 20px;
     margin-top: 64px;
+    margin-bottom: 42px;
   }
 
   & .links {
@@ -1116,7 +1119,10 @@ button:hover {
     & .footer-section {
       flex-direction: row;
       display: flex;
-      align-items: baseline;
+    }
+
+    & .social-media {
+      margin-top: 0px;
     }
 
     & .links {
