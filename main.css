@@ -23,6 +23,8 @@
   --padding-desktop: 120px;
   --padding-desktop-wide: max(120px, 15vw);
 
+  --border-radius: 18px;
+
   --default-padding: var(--padding-mobile);
 }
 
@@ -495,7 +497,7 @@ button:hover {
 
       & img {
         object-fit: cover;
-        border-radius: 18px;
+        border-radius: var(--border-radius);
         width: 100%;
         height: auto;
       }
@@ -1364,7 +1366,7 @@ button:hover {
 
         & img {
           width: 100%;
-          border-radius: 18px;
+          border-radius: var(--border-radius);
           height: 100%;
           object-fit: cover;
           display: block;
@@ -1391,7 +1393,7 @@ button:hover {
         height: 100%;
         background: rgba(0, 0, 0, 0.45);
         z-index: 1;
-        border-radius: 18px;
+        border-radius: var(--border-radius);
       }
 
       & .overlay-content {
@@ -1511,19 +1513,45 @@ button:hover {
     & .card {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      height: 600px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
 
-
-
-      & .title {
-        font-weight: var(--font-bold);
-        font-size: var(--heading-5);
+      & .card-image {
+        width: 100%;
+        height: auto;
+        max-height: 50%;
+        display: block;
+        object-fit: cover;
+        border-top-left-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+        aspect-ratio: 1/1;
       }
 
-      & .details {
-        & span:first-child {
-          color: var(--orange);
+      & .card-body {
+        padding: 16px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & .content {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        & .title {
           font-weight: var(--font-bold);
+          font-size: var(--heading-5);
+        }
+
+        & .details {
+          & span:first-child {
+            color: var(--orange);
+            font-weight: var(--font-bold);
+          }
         }
       }
     }
@@ -1537,10 +1565,11 @@ button:hover {
 
     & .cards {
       flex-direction: row;
-      gap: 16px;
 
       & .card {
-        gap: 24px;
+        & .card-body {
+          padding: 24px;
+        }
       }
     }
   }
@@ -1552,7 +1581,6 @@ button:hover {
     padding-bottom: 129px;
 
     & .cards {
-      gap: 24px;
     }
   }
 }
@@ -1560,7 +1588,6 @@ button:hover {
 @media only screen and (min-width: 1920px) {
   .key-projects {
     & .cards {
-      gap: 24px;
     }
   }
 }
