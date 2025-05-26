@@ -426,9 +426,9 @@ button:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .navbar {
-    padding: 24px 24px;
+    padding: 24px 36px;
   }
 
   .navbar .nav-links {
@@ -444,9 +444,19 @@ button:hover {
   }
 }
 
-@media (min-width: 1200px) {
-  .navbar .nav-links {
+@media only screen and (min-width: 1440px) {
+  .navbar-wrapper .navbar {
+    padding: 24px 120px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+ .navbar .nav-links {
     gap: calc(1vw + 40px);
+  }
+
+  .navbar-wrapper .navbar {
+    padding: 24px max(120px, 15vw);
   }
 }
 
