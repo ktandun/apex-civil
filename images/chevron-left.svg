@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:980286e33e2cf865b830edcf8e3622aaeb05c786acd00a5633428e445cc0a816
-size 317
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Heroicons/chevron-left">
+<rect width="48" height="48" rx="5" fill="#081A3D"/>
+<path id="Vector" d="M30 38L16 24L30 10" stroke="#FF7B31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
