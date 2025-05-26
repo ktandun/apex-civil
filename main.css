@@ -1444,7 +1444,7 @@ button:hover {
 
 @media only screen and (min-width: 768px) {
   .our-services-subsection {
-    --page-padding: 100px 32px;
+    --page-padding: 100px var(--default-padding);
 
     & .points {
       flex-direction: row;
@@ -1486,7 +1486,7 @@ button:hover {
 
 @media only screen and (min-width: 992px) {
   .our-services-subsection {
-    --page-padding: 120px 120px;
+    --page-padding: 120px var(--default-padding);
 
     & .breadcrumb {
       padding: 8px 120px;
@@ -1506,9 +1506,9 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .our-services-subsection {
-    --page-padding: 180px max(120px, 15vw);
+    --page-padding: 180px var(--default-padding);
 
     & .breadcrumb {
       padding: 8px max(120px, 15vw);
