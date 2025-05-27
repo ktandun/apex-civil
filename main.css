@@ -1506,8 +1506,8 @@ button:hover {
   background-color: var(--light);
 
   & .cards {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 32px;
 
     & .card {
@@ -1521,7 +1521,7 @@ button:hover {
       & .card-image {
         width: 100%;
         height: auto;
-        max-height: 50%;
+        max-height: min(50%, 300px);
         display: block;
         object-fit: cover;
         border-top-left-radius: var(--border-radius);
@@ -1540,6 +1540,11 @@ button:hover {
           display: flex;
           flex-direction: column;
           gap: 16px;
+          font-size: 16px;
+        }
+
+        & .bullet-points.arrow-link span {
+          font-size: 16px;
         }
 
         & .title {
@@ -1551,6 +1556,11 @@ button:hover {
           & span:first-child {
             color: var(--orange);
             font-weight: var(--font-bold);
+          }
+
+          .point {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
           }
         }
       }
@@ -1564,13 +1574,27 @@ button:hover {
     padding-bottom: 97px;
 
     & .cards {
-      flex-direction: row;
+      grid-template-columns: repeat(2, 1fr);
 
       & .card {
+        height: 635px;
+
         & .card-body {
           padding: 24px;
+
+          & .content {
+            gap: 24px;
+          }
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .key-projects {
+    & .cards {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
@@ -1579,15 +1603,5 @@ button:hover {
   .key-projects {
     padding-top: 129px;
     padding-bottom: 129px;
-
-    & .cards {
-    }
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .key-projects {
-    & .cards {
-    }
   }
 }
