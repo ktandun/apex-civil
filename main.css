@@ -17,6 +17,7 @@
   --heading-4: min(34px, calc(6vw));
   --heading-5: min(20px, calc(5vw));
   --heading-6: min(18px, calc(4vw));
+  --heading-7: min(16px, calc(3vw));
 
   --padding-mobile: 16px;
   --padding-tablet: 36px;
@@ -1498,11 +1499,11 @@ button:hover {
         display: flex;
         flex-direction: column;
         gap: 16px;
-        font-size: 16px;
+        font-size: var(--heading-7);
       }
 
       & .bullet-points.arrow-link span {
-        font-size: 16px;
+        font-size: var(--heading-7);
       }
 
       & .title {
@@ -1518,7 +1519,7 @@ button:hover {
 
         .point {
           display: grid;
-          grid-template-columns: 1fr 3fr;
+          grid-template-columns: 2fr 4fr;
         }
       }
     }
@@ -1537,6 +1538,12 @@ button:hover {
 
         & .card-content {
           gap: 24px;
+
+          & .details {
+            .point {
+              grid-template-columns: 1fr 3fr;
+            }
+          }
         }
       }
     }
