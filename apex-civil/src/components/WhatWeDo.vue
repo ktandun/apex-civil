@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import whatWeDo from '../assets/what-we-do-1.jpg'
+import whatWeDo from '@/assets/what-we-do-1.jpg'
 import ArrowLink from './ArrowLink.vue'
 </script>
 

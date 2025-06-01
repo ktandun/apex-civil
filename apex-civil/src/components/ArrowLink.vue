@@ -1,24 +1,20 @@
 <template>
-  <div class="arrow-link">
+  <router-link class="arrow-link" :to="props.link">
     <p>
       <img :src="arrow" />
       <span :class="props.dark ? 'text-dark' : 'text-light'">{{ props.text }}</span>
     </p>
-  </div>
+  </router-link>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
-import arrow from '../assets/arrow.svg'
+import arrow from '@/assets/arrow.svg'
 
 const props = defineProps<{
   text: string
+  link: any
   dark: boolean
 }>()
-
-const darkStyle = computed(() => {
-  return props.dark ? 'is-dark' : 'is-light'
-})
 </script>
 
 <style scoped>

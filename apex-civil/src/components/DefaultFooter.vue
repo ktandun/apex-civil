@@ -42,14 +42,14 @@
 </template>
 
 <script lang="ts" setup>
-import logo from '../assets/logo.svg'
-import locationMarker from '../assets/location-marker.svg'
-import mail from '../assets/mail.svg'
-import phone from '../assets/phone.svg'
-import fbLogo from '../assets/fb-logo.svg'
-import linkedInLogo from '../assets/linkedin-logo.svg'
-import sitewise from '../assets/sitewise.png'
-import prequal from '../assets/prequal.png'
+import logo from '@/assets/logo.svg'
+import locationMarker from '@/assets/location-marker.svg'
+import mail from '@/assets/mail.svg'
+import phone from '@/assets/phone.svg'
+import fbLogo from '@/assets/fb-logo.svg'
+import linkedInLogo from '@/assets/linkedin-logo.svg'
+import sitewise from '@/assets/sitewise.png'
+import prequal from '@/assets/prequal.png'
 </script>
 
 <style scoped>

@@ -45,8 +45,8 @@
 </template>
 
 <script lang="ts" setup>
-import deliveringQuality1 from '../assets/delivering-quality-1.jpg'
-import deliveringQuality2 from '../assets/delivering-quality-2.jpg'
+import deliveringQuality1 from '@/assets/delivering-quality-1.jpg'
+import deliveringQuality2 from '@/assets/delivering-quality-2.jpg'
 </script>
 
 <style scoped>

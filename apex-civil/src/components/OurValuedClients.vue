@@ -26,13 +26,13 @@
 </template>
 
 <script setup lang="ts">
-import higgins from '../assets/higgins-logo.svg'
-import kaingaOra from '../assets/kainga-ora-logo.svg'
-import nzta from '../assets/nzta-logo.svg'
-import westernBayOfPlenty from '../assets/western-bay-of-plenty-logo.svg'
-import opotikiDistrictCouncil from '../assets/opotiki-district-council-logo.svg'
-import veolia from '../assets/veolia-logo.png'
-import rotoruaLakesCouncil from '../assets/rotorua-lakes-council-logo.svg'
+import higgins from '@/assets/higgins-logo.svg'
+import kaingaOra from '@/assets/kainga-ora-logo.svg'
+import nzta from '@/assets/nzta-logo.svg'
+import westernBayOfPlenty from '@/assets/western-bay-of-plenty-logo.svg'
+import opotikiDistrictCouncil from '@/assets/opotiki-district-council-logo.svg'
+import veolia from '@/assets/veolia-logo.png'
+import rotoruaLakesCouncil from '@/assets/rotorua-lakes-council-logo.svg'
 </script>
 
 <style scoped>

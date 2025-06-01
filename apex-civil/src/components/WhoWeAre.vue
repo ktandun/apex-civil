@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import whoWeAre from '../assets/who-we-are-1.jpg'
+import whoWeAre from '@/assets/who-we-are-1.jpg'
 import ArrowLink from './ArrowLink.vue'
 </script>
 

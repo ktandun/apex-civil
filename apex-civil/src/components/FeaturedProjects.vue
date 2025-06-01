@@ -22,10 +22,10 @@
 </template>
 
 <script setup lang="ts">
-import arrow from '../assets/arrow.svg'
-import featuredProjects from '../assets/featured-projects-1.jpeg'
-import chevronLeft from '../assets/chevron-left.svg'
-import chevronRight from '../assets/chevron-right.svg'
+import arrow from '@/assets/arrow.svg'
+import featuredProjects from '@/assets/featured-projects-1.jpeg'
+import chevronLeft from '@/assets/chevron-left.svg'
+import chevronRight from '@/assets/chevron-right.svg'
 import ArrowLink from './ArrowLink.vue'
 </script>
 
