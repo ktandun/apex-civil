@@ -124,6 +124,7 @@ watch(
         font-weight: var(--font-semibold);
         font-size: var(--heading-6);
         color: var(--orange);
+        font-family: var(--font-ibm);
       }
 
       & .point-details {
@@ -136,6 +137,8 @@ watch(
     & .more-details {
       padding-top: 80px;
       padding-bottom: 48px;
+      font-family: var(--font-ibm);
+      font-size: var(--heading-6);
     }
 
     & .project-image {

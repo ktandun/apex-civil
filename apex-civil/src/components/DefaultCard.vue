@@ -67,11 +67,7 @@ const props = defineProps<{
       display: flex;
       flex-direction: column;
       gap: 16px;
-      font-size: var(--heading-7);
-    }
-
-    & .bullet-points.arrow-link span {
-      font-size: var(--heading-7);
+      font-size: var(--heading-6);
     }
 
     & .title {
@@ -82,13 +78,19 @@ const props = defineProps<{
     & .details {
       & span:first-child {
         color: var(--orange);
+        font-family: var(--font-ibm);
         font-weight: var(--font-bold);
       }
 
-      .point {
+      & .point {
         display: grid;
         grid-template-columns: 2fr 4fr;
       }
+    }
+
+    & .description {
+        font-size: var(--heading-6);
+        font-family: var(--font-ibm);
     }
   }
 }
@@ -104,7 +106,7 @@ const props = defineProps<{
         gap: 24px;
 
         & .details {
-          .point {
+          & .point {
             grid-template-columns: 1fr 3fr;
           }
         }

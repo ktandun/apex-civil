@@ -28,10 +28,10 @@
     </div>
     <div class="footer-section most-bottom">
       <div class="links">
-        <div>Our Services</div>
-        <div>Key Projects</div>
-        <div>Our Team</div>
-        <div>Contact Us</div>
+        <router-link :to="{ name: 'our-services' }"  tag="a">Our Services</router-link>
+        <router-link :to="{ name: 'key-projects' }"  tag="a">Key Projects</router-link>
+        <router-link :to="{ name: 'our-team' }" tag="a" >Our Team</router-link>
+        <a href="#">Contact Us</a>
       </div>
       <div class="footer-logos">
         <img :src="sitewise" />
@@ -109,11 +109,11 @@ import prequal from '@/assets/prequal.png'
     flex-direction: row;
     gap: 16px;
 
-    & div:hover {
+    & a:hover {
       text-decoration: underline;
     }
 
-    & div:not(:last-child) {
+    & a:not(:last-child) {
       display: none;
     }
   }
@@ -146,7 +146,7 @@ import prequal from '@/assets/prequal.png'
     }
 
     & .links {
-      & div:not(:last-child) {
+      & a:not(:last-child) {
         display: block;
       }
     }
