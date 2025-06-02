@@ -1,4 +1,5 @@
 <template>
+  <DefaultBreadcrumb title="Our Services"></DefaultBreadcrumb>
   <!-- civil construction -->
   <div
     class="our-services-section"
@@ -29,6 +30,7 @@
 
 <script setup lang="ts">
 import ArrowLink from './ArrowLink.vue'
+import DefaultBreadcrumb from './DefaultBreadcrumb.vue';
 import { ourServices } from './ourServices'
 </script>
 

@@ -1,4 +1,5 @@
 <template>
+  <DefaultBreadcrumb title="Key Projects"></DefaultBreadcrumb>
   <div class="key-projects">
     <div class="cards">
       <DefaultCard
@@ -13,6 +14,7 @@
 
 <script setup lang="ts">
 import DefaultCard from '@/components/DefaultCard.vue'
+import DefaultBreadcrumb from './DefaultBreadcrumb.vue';
 import { keyProjects } from './keyProjects'
 </script>
 
