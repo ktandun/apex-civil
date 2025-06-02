@@ -2,7 +2,7 @@
   <div class="breadcrumb">
     <div class="crumb" v-if="parent">
       <div>HOME</div>
-      <div><img :src="chevronRight" /></div>
+      <div class="chevron"><img :src="chevronRight" /></div>
       <div style="font-weight: 500">{{ props.parent }}</div>
     </div>
     <div class="title">{{ props.title }}</div>
@@ -18,4 +18,5 @@ const props = defineProps<{
 }>()
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+</style>
