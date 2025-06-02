@@ -12,7 +12,6 @@
 </template>
 
 <script setup lang="ts">
-import DefaultNavbar from '@/components/DefaultNavbar.vue'
 import DeliveringQuality from '@/components/DeliveringQuality.vue'
 import WhatWeDo from '@/components/WhatWeDo.vue'
 import DefaultFooter from '@/components/DefaultFooter.vue'

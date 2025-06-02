@@ -24,7 +24,7 @@
         </p>
       </div>
 
-      <ArrowLink text="Find out more" :dark="false"></ArrowLink>
+      <ArrowLink :link="{ name: 'our-services' }" text="Find out more" :dark="false"></ArrowLink>
     </div>
     <div class="image">
       <img :src="whatWeDo" />

@@ -8,17 +8,9 @@
         </div>
         <div class="left main-text">
           <div class="wrapper">
-            <p class="title">Bring your vision to life</p>
+            <p class="title">{{ ourService.slogan }}</p>
             <p class="description">
-              We provide full-service land development solutions designed to deliver value at every
-              stage. Whether it's a small two-lot subdivision or a large-scale residential or
-              commercial project, our team is equipped to manage the entire process from start to
-              finish.
-              <br />
-              We work closely with clients, consultants, and local authorities to streamline the
-              path from concept to completion—ensuring each development runs smoothly, meets
-              regulatory requirements, and achieves the best possible outcome, both financially and
-              functionally.
+              {{ ourService.sloganDescription }}
             </p>
           </div>
         </div>

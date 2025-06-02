@@ -1,13 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomepageView from '@/views/HomepageView.vue'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: HomepageView,
+      component: () => import('@/views/HomepageView.vue'),
     },
     {
       path: '/our-services',
@@ -31,10 +30,15 @@ const router = createRouter({
       component: () => import('@/views/KeyProjectDetailsView.vue'),
       props: true,
     },
+    {
+      path: '/our-team',
+      name: 'our-team',
+      component: () => import('@/views/OurTeamView.vue'),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     // Always scroll to top
-    return { top: 0 }
+    document.getElementById('navbar')?.scrollIntoView({ behavior: 'smooth' })
   },
 })
 

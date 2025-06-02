@@ -13,7 +13,7 @@
           areas, ensuring that every client’s vision is brought to life with precision and care.
         </p>
       </div>
-      <ArrowLink text="Meet the team" :dark="false"></ArrowLink>
+      <ArrowLink :link="{ name: 'our-team' }" text="Meet the team" :dark="false"></ArrowLink>
     </div>
   </div>
 </template>

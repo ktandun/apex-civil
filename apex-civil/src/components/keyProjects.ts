@@ -1,3 +1,5 @@
+import hero from "@/assets/hero.jpg"
+
 export type KeyProject = {
   html: string
   image: string
@@ -12,7 +14,7 @@ export type KeyProject = {
 export const keyProjects: KeyProject[] = [
   {
     html: 'tarawera-landing',
-    image: new URL('../assets/hero.jpg', import.meta.url).href,
+    image: hero,
     title: 'Tarawera Landing',
     service: 'Project management, civil engineering',
     location: 'Hamilton',
@@ -24,7 +26,7 @@ export const keyProjects: KeyProject[] = [
   },
   {
     html: 'acacia-bay',
-    image: new URL('../assets/hero.jpg', import.meta.url).href,
+    image: hero,
     title: 'Acacia Bay',
     service: 'Project management, civil engineering',
     location: 'Hamilton',
@@ -36,7 +38,7 @@ export const keyProjects: KeyProject[] = [
   },
   {
     html: 'marshall-road',
-    image: new URL('../assets/hero.jpg', import.meta.url).href,
+    image: hero,
     title: 'Marshall Road',
     service: 'Project management, civil engineering',
     location: 'Hamilton',

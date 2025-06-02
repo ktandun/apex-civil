@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <img class="card-image" :src="image">
+    <img class="card-image" :src="image" />
     <div class="card-body">
       <div class="card-content">
         <div class="title">{{ props.title }}</div>
@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import ArrowLink from "./ArrowLink.vue"
+import ArrowLink from './ArrowLink.vue'
 
 const props = defineProps<{
   image: string
@@ -33,7 +33,7 @@ const props = defineProps<{
   location: string
   description: string
   link: any
-}>();
+}>()
 </script>
 
 <style lang="css" scoped>
