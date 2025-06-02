@@ -16,13 +16,19 @@
 
 <script setup lang="ts">
 import DefaultNavbar from './DefaultNavbar.vue'
+import heroImage from "@/assets/hero.jpg"
+
+// preload hero image
+const img = new Image()
+img.src = heroImage
+
 </script>
 
 <style lang="css" scoped>
 /* Hero */
 .hero {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/hero.jpg');
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('@/assets/hero.jpg');
 
   background-position: center;
   background-size: cover;

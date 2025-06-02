@@ -103,7 +103,7 @@ button:hover {
 
 /* breadcrumb */
 .breadcrumb {
-  height: 200px;
+  height: 80px;
   background-color: var(--dark);
   color: var(--light);
   display: flex;
@@ -129,8 +129,9 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .breadcrumb {
+    height: 200px;
     padding: 8px var(--default-padding);
   }
 }
