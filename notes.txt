@@ -1,2 +1,0 @@
-how to use srcset
-https://html.com/attributes/img-srcset/#Using_srcset
