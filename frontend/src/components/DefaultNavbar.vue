@@ -10,7 +10,7 @@
         <router-link :to="{ name: 'our-services' }" class="nav-link">Our Services</router-link>
         <router-link :to="{ name: 'key-projects' }" class="nav-link">Key Projects</router-link>
         <router-link :to="{ name: 'our-team' }" class="nav-link">Our Team</router-link>
-        <a href="#" class="nav-link">Contact Us</a>
+        <router-link :to="{ name: 'contact-us' }" class="nav-link">Contact Us</router-link>
         <a @click="toggleNav" class="hamburger-menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
       <router-link :to="{ name: 'our-services' }">Our Services</router-link>
       <router-link :to="{ name: 'key-projects' }">Key Projects</router-link>
       <router-link :to="{ name: 'our-team' }">Our Team</router-link>
-      <a href="#">Contact Us</a>
+      <router-link :to="{ name: 'contact-us' }">Contact Us</router-link>
     </div>
   </div>
 </template>
