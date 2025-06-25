@@ -1,13 +1,13 @@
 <template>
   <div class="card">
-    <img class="card-image" :src="image" />
+    <img class="card-image" :src="image[0]" />
     <div class="card-body">
       <div class="card-content">
         <div class="title">{{ props.title }}</div>
         <div class="details">
           <div class="point">
             <span>Service:</span>
-            <span>{{ props.service }}</span>
+            <span>{{ props.service[0] }}</span>
           </div>
           <div class="point">
             <span>Location:</span>
@@ -27,9 +27,9 @@
 import ArrowLink from './ArrowLink.vue'
 
 const props = defineProps<{
-  image: string
+  image: string[]
   title: string
-  service: string
+  service: string[]
   location: string
   description: string
   link: any

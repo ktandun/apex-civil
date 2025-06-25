@@ -11,7 +11,7 @@
       <div class="points">
         <div>
           <div class="point-header">LOCATION</div>
-          <div class="point-details">{{ keyProject.location }}, New Zealand</div>
+          <div class="point-details">{{ keyProject.location }}</div>
         </div>
 
         <div>
@@ -21,18 +21,20 @@
 
         <div>
           <div class="point-header">SERVICES</div>
-          <div class="point-details">{{ keyProject.service }}</div>
+          <div class="point-details" v-for="service in keyProject.service" :key="service">
+            {{ service }}
+          </div>
         </div>
       </div>
 
       <!-- more details -->
-      <div class="more-details">
+      <div class="more-details" style="white-space: pre-wrap">
         <div>{{ keyProject.more_details }}</div>
       </div>
 
       <!-- image -->
-      <div class="project-image">
-        <img :src="keyProject.image" />
+      <div class="project-image" v-for="img in keyProject.image" :key="img">
+        <img :src="img" />
       </div>
 
       <!-- you might also like -->
@@ -92,7 +94,7 @@ watch(
   & .header-img {
     width: 100%;
     height: auto;
-    padding-bottom: 48px;
+    padding-bottom: 64px;
 
     img {
       width: 100%;
@@ -104,7 +106,7 @@ watch(
   & .content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 64px;
     padding-left: var(--default-padding);
     padding-right: var(--default-padding);
 
@@ -115,8 +117,8 @@ watch(
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding-top: 48px;
-      padding-bottom: 48px;
+      padding-top: 32px;
+      padding-bottom: 32px;
       border-top: 2px solid #c8c8c8;
       border-bottom: 2px solid #c8c8c8;
 
@@ -135,15 +137,14 @@ watch(
     }
 
     & .more-details {
-      padding-top: 80px;
-      padding-bottom: 48px;
       font-family: var(--font-ibm);
       font-size: var(--heading-6);
+      margin: auto;
+      text-align: center;
     }
 
     & .project-image {
       width: 100%;
-      padding-bottom: 30px;
 
       & img {
         height: auto;
@@ -155,10 +156,9 @@ watch(
 
     & .you-might-also-like {
       text-align: center;
-      font-size: var(--heading-5);
+      font-size: var(--heading-4);
       font-weight: var(--font-bold);
-      padding-top: 60px;
-      padding-bottom: 30px;
+      padding-top: 64px;
       border-top: 2px solid #c8c8c8;
     }
 
@@ -171,12 +171,16 @@ watch(
 @media only screen and (min-width: 768px) {
   .key-project-details {
     & .header-img {
+      padding-bottom: 128px;
+
       img {
         height: 546px;
       }
     }
 
     & .content {
+      gap: 128px;
+
       & .points {
         flex-direction: row;
         justify-content: space-between;
@@ -184,6 +188,10 @@ watch(
         & > div {
           flex: 1;
         }
+      }
+
+      & .more-details {
+        max-width: 80%;
       }
 
       & .project-image {
