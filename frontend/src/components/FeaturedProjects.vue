@@ -9,8 +9,16 @@
         <p class="big-title">Featured Projects</p>
         <p class="description">ACACIA BAY</p>
         <div class="bullet-points">
-          <ArrowLink text="Read more" link="" :dark="true"></ArrowLink>
-          <ArrowLink text="See all projects" link="" :dark="true"></ArrowLink>
+          <ArrowLink
+            text="Read more"
+            :link="{ name: 'key-project-details', params: { name: 'acacia-bay' } }"
+            :dark="true"
+          ></ArrowLink>
+          <ArrowLink
+            text="See all projects"
+            :link="{ name: 'key-projects' }"
+            :dark="true"
+          ></ArrowLink>
         </div>
       </div>
       <div class="arrows">
