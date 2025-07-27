@@ -1,7 +1,9 @@
 <template>
   <div class="breadcrumb">
     <div class="crumb" v-if="parent">
-      <div>HOME</div>
+      <router-link :to="{ name: 'home' }">
+        <div>HOME</div>
+      </router-link>
       <div class="chevron"><img :src="chevronRight" /></div>
       <div style="font-weight: 500">{{ props.parent }}</div>
     </div>
@@ -18,5 +20,4 @@ const props = defineProps<{
 }>()
 </script>
 
-<style lang="css" scoped>
-</style>
+<style lang="css" scoped></style>

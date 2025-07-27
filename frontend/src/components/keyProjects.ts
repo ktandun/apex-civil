@@ -22,15 +22,17 @@ export const keyProjects: KeyProject[] = [
   {
     html: 'tarawera-landing',
     heroImage: taraweraLandingHero,
-    image: [taraweraLanding],
+    image: [taraweraLanding, taraweraLanding, taraweraLanding],
     title: 'Tarawera Landing',
-    service: ['Project management, civil engineering'],
-    location: 'Hamilton',
+    service: ['Design & Build', 'Earthworks', 'Civil Design Management'],
+    location: 'Lake Tarawera, Rotorua',
     description:
       'Apex Civil in a joint venture with company name, constructed the new Hamilton Bridge',
-    client: 'We Build NZ',
-    more_details:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+    client: `Rotorua Lakes Council
+    (Parks & Reserves Team)`,
+    more_details: `This design and build project for Rotorua Lakes Council’s Parks &amp; Reserves Team involved the full replacement of the Lake Tarawera jetty and surrounding civil infrastructure throughout the reserve area. Apex Civil delivered all earthworks, drainage, roading, and concrete works, with careful management of public access and environmental controls in this high-use recreational space.
+
+The scope also included significant sediment control measures to protect the lake edge during works near the jetty — including silt curtains, runoff control, and monitored discharge zones. Working in partnership with Blueline Consulting, we led the civil design and construction, coordinating seamlessly with council stakeholders to meet programme, quality, and environmental requirements.`,
   },
   {
     html: 'acacia-bay',
@@ -42,11 +44,11 @@ export const keyProjects: KeyProject[] = [
     description:
       'Apex Civil in a joint venture with company name, constructed the new Hamilton Bridge',
     client: 'Private Developer',
-    more_details: `Apex Civil delivered this 15-lot residential subdivision in Acacia Bay as a comprehensive design-and-build solution. Our scope included engineering design, land transfer surveying, and management of all council approval processes in close collaboration with Taupō District Council and the client’s build partners to ensure a seamless, compliant outcome.
+    more_details: `This 15-lot residential subdivision in Acacia Bay was delivered as a full design-and-build package by Apex Civil. We managed the engineering design, land transfer surveying, and council approval processes, working closely with Taupō District Council and the client’s build partners to ensure a smooth and fully compliant outcome.
 
-Our team completed all civil construction works, including bulk earthworks, three waters installation, road and pavement construction, concrete works, and utility trenching. Beyond the core subdivision infrastructure, we also provided residential civil services for each lot—completing driveways, stormwater tank systems, and landscaping to support the housing development.
+Our team carried out all civil construction works including bulk earthworks, three waters installation, road and pavement construction, concrete works, and utility trenching. In addition to the subdivision infrastructure, Apex also delivered residential civil works for each lot, including driveways, stormwater tank systems, and landscaping to support the on-site housing construction completed by others.
 
-This project highlights Apex Civil’s capability to lead both design and construction phases, delivering an end-to-end solution for developers and project stakeholders.`,
+This project demonstrates Apex Civil’s ability to lead both the design and construction phases — providing a complete delivery solution for developers and end users alike.`,
   },
   {
     html: 'marshall-road',

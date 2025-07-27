@@ -129,6 +129,7 @@ watch(
 
     & p.description {
       font-size: var(--heading-6);
+      white-space: pre-wrap;
     }
   }
 

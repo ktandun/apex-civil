@@ -1,7 +1,7 @@
-import ourServicesPoint from "@/assets/our-services-point.svg";
-import landDevelopment from "@/assets/land-development.jpg";
-import civilConstruction from "@/assets/civil-construction.jpg"
-import projectManagement from "@/assets/project-management.jpg"
+import ourServicesPoint from '@/assets/our-services-point.svg'
+import landDevelopment from '@/assets/land-development.jpg'
+import civilConstruction from '@/assets/civil-construction.jpg'
+import projectManagement from '@/assets/project-management.jpg'
 
 export type OurService = {
   html: string
@@ -25,108 +25,75 @@ export const ourServices: OurService[] = [
   {
     html: 'civil-construction',
     slogan: 'Where construction meets innovation',
-    sloganDescription: `
-     For every project we provide our clients with a comprehensive risk assessment,
-     construction methodology and an inspection and testing plan.
-     Whether small residential or large-scale commercial and industrial projects,
-     our team has the expertise to safely construct your project with efficiency and accuracy. `,
+    sloganDescription: `We deliver technically sound civil construction with precision, structure, and professionalism. Every project is backed by detailed methodology, a clear risk management approach, and tailored inspection and testing processes. From residential and commercial sites to large-scale infrastructure upgrades, we build with care, capability, and control — every time.`,
     image: civilConstruction,
     title: 'Civil Construction',
-    description: ` Our team is committed to delivering excellence with professionalism
-                        and integrity at every step. We specialise in managing high-quality
-                        civil projects across Taupō and surrounding areas, ensuring that
-                        every client’s vision is brought to life with precision and care.  `,
+    description: `We execute high-quality civil works — from earthworks and drainage to roads and concrete — with the skill, care, and technical detail that set great projects apart.`,
     reversed: false,
     points: [
       {
         image: ourServicesPoint,
-        title: 'Earthworks',
-        description: `Prepare your site for success with our experienced team and modern equipment. From large-scale site leveling to detailed earth shaping, we’ll ensure your project starts on solid ground.`,
+        title: 'Site Works, Earthworks & Remediation',
+        description: `Site clearance, bulk excavation, demolition, and remediation — including cut-to-fill, trimming, stabilisation, and safe handling of contaminated materials.`,
       },
       {
         image: ourServicesPoint,
-        title: 'Drainage',
-        description: `Keep your project running smoothly with our stormwater and wastewater systems. Whether it’s subsoil drainage or potable water reticulation, we’ll manage the entire process with precision.`,
+        title: 'Stormwater Systems & Structures',
+        description: `Soakage pits, rain gardens, detention tanks, manholes, culverts and chambers — installed to council standards with precision, function, and environmental
+performance in mind.`,
       },
       {
         image: ourServicesPoint,
-        title: 'Utility Installation',
-        description: `Let us handle the complex integration of underground utilities, ensuring your project is future-ready and meets all compliance standards.`,
+        title: 'Drainage Installation',
+        description: `Stormwater & wastewater systems — installed to spec and tested for performance across private developments and public networks.`,
       },
       {
         image: ourServicesPoint,
-        title: 'Pavement and Roading',
-        description: `Need durable, high-performing roads or pavements? We’ll deliver surfaces that are built to handle heavy use while keeping communities connected.`,
+        title: 'Erosion & Sediment Control',
+        description: `Silt fences, DEBs, and stabilisation measures — full environmental compliance from pre-start through to final reinstatement.`,
+      },
+      {
+        image: ourServicesPoint,
+        title: 'Concrete & Kerbing Works',
+        description: `House pads, commercial and industrial slabs, kerb & channel, and streetscape finishes — built for strength, accuracy, and long-term performance.`,
       },
       {
         image: ourServicesPoint,
         title: 'Retaining Walls',
-        description: `We design and construct retaining walls, including gravity, MSE, cantilever, and anchored systems, ensuring structural stability for even the most challenging sites.`,
+        description: `Gravity, MSE, cantilevered, and anchored systems — engineered for stability and constructed with precision.`,
       },
       {
         image: ourServicesPoint,
-        title: 'Concrete and Streetscape',
-        description: `Enhance your project with our concrete solutions, from foundations to polished streetscapes that add value to urban developments.`,
+        title: 'Utility Trenching & Installation',
+        description: `Water, gas, power, fibre, and comms — safely installed, and reinstated to the highest standards.`,
       },
       {
         image: ourServicesPoint,
-        title: 'Health and Safety',
-        description: `Your project’s safety is our top priority. We bring unmatched expertise to ensure every site operates to the highest industry standards.`,
-      },
-    ],
-  },
-  {
-    html: 'land-development',
-    image: landDevelopment,
-    title: 'Land Development',
-    description: ` We specialise in the necessary expertise for all land development
-                        requirements. `,
-    reversed: true,
-    slogan: 'Bring your vision to life',
-    sloganDescription: `
-    We provide full-service land development solutions designed to deliver value at every stage. Whether it’s a small two-lot subdivision or a large-scale residential or commercial project, our team is equipped to manage the entire process from start to finish.
-    We work closely with clients, consultants, and local authorities to streamline the path from concept to completion—ensuring each development runs smoothly, meets regulatory requirements, and achieves the best possible outcome, both financially and functionally.
-     `,
-    points: [
-      {
-        image: ourServicesPoint,
-        title: 'Initial Due Diligence & Feasibility Analysis',
-        description: `We help you understand what’s possible with your site from the outset. By identifying risks, constraints, and opportunities early on, we give you the clarity you need to make confident, informed decisions before committing to development.`,
+        title: 'Landscaping & Finishing Works',
+        description: `Decks, fencing, patios, and soft landscaping — clean, consistent finishes that complete the build and elevate presentation.`,
       },
       {
         image: ourServicesPoint,
-        title: 'Procurement & Delivery of Works',
-        description: `From estimating construction costs to sourcing contractors, we manage the procurement process to ensure value for money and a strong delivery team. Once underway, we stay hands-on to keep everything moving.`,
+        title: 'Pavement & Roading',
+        description: `Full roading packages, pavement formation, basecourse, surfacing, and tie-ins — durable, high-performing, and built to last.`,
       },
       {
         image: ourServicesPoint,
-        title: 'Concept Planning & Detailed Design',
-        description: `We take your vision and shape it into a practical, compliant development plan. From high-level concept layouts to detailed engineering design, we ensure your plans are ready for approval—and ready to build.`,
+        title: 'Traffic Management',
+        description:
+          'Temporary traffic control designed and delivered to maintain public safety, minimise disruption, and support efficient site access.',
       },
       {
         image: ourServicesPoint,
-        title: 'Environmental Impact Assessments',
-        description: `We assess the environmental effects of your development and help minimise them with smart, practical strategies. Working alongside trusted specialists, we deliver the documentation needed to keep your project progressing smoothly.`,
+        title: 'Stormwater Management Systems',
+        description:
+          'Soakage pits, rain gardens, detention tanks, and overland flow controls — smart systems that meet hydraulic and environmental demands.',
       },
       {
         image: ourServicesPoint,
-        title: 'Contract & Project Management',
-        description: `We handle contractor agreements, variations, and day-to-day management to keep your project on track. With tight oversight and clear communication, we resolve issues quickly and avoid unnecessary delays.`,
-      },
-      {
-        image: ourServicesPoint,
-        title: 'Project Completion & Certification',
-        description: `We manage the final stretch—coordinating inspections, gathering documentation, and liaising with council to ensure your project is signed off properly and ready for the next phase.`,
-      },
-      {
-        image: ourServicesPoint,
-        title: 'Resource Consent Preparation & Lodgement',
-        description: `Our team prepares and submits all the necessary documentation for your resource consents, and manages the back-and-forth with council and other authorities, keeping the process as smooth and stress-free as possible.`,
-      },
-      {
-        image: ourServicesPoint,
-        title: 'Early Advice on Planning & Development Requirements',
-        description: `Our team provides early-stage guidance around planning rules, zoning, and council requirements. We help you navigate the red tape and set realistic expectations, so you’re never caught off guard.`,
+        title: 'Horizontal Directional Drilling (HDD)',
+        description:
+          'Trenchless installation of water, power, fibre, and telco — from small to large diameters, ideal for road crossings and sensitive sites, delivered in-house.',
       },
     ],
   },
@@ -138,80 +105,133 @@ export const ourServices: OurService[] = [
     We will manage your civil project with precision.
     We have managers with decorated and board experience
     in high profile and high-risk civil infrastructure project.`,
-    reversed: false,
+    reversed: true,
     slogan: 'Have clarity and control',
-    sloganDescription: `From feasibility to final delivery, we take a hands-on approach to managing every stage of your civil project. With robust systems and clear communication, we coordinate consultants, control budgets, and keep timelines moving—so you can be confident in the outcome.
-We proudly deliver high-quality results across the Central North Island, Waikato, Bay of Plenty, Manawatū-Whanganui, and Hawke’s Bay. `,
+    sloganDescription: `We manage civil projects with structure, foresight, and confidence — taking responsibility for every stage, from feasibility through to handover. Our team brings the systems, experience, and technical capability to coordinate consultants, contractors, and compliance requirements across even the most complex builds.
+
+
+Whether you’re delivering a subdivision, commercial site, or infrastructure package, we lead the process with full transparency and practical insight. With Apex Civil managing your project, you get clear communication, tighter cost control, and reliable outcomes — no matter the scale or complexity.`,
     points: [
       {
         image: ourServicesPoint,
         title: 'Client Representation',
         subPoints: [
-          'We become your voice on-site, making sure your best interests are front and centre',
-          'Keep you informed at every stage, without overwhelming you with the technical stuff',
-          'Provide honest, experienced advice to support confident decisions',
-          'Make sure what’s promised is exactly what’s delivered',
+          'We act as your voice across the entire delivery process — ensuring that your priorities are front and centre',
+          'From early decisions to final outcomes, we protect your interests, provide honest guidance, and ensure what’s promised is what’s delivered',
+          'You’ll be kept fully informed, without being overwhelmed by technical details',
         ],
       },
       {
         image: ourServicesPoint,
         title: 'Development Management',
         subPoints: [
-          'Bring together all the moving parts of your project into one clear plan',
-          'Coordinate everyone from designers to contractors so things stay on track',
-          'Keep your budget and timeline in check without cutting corners',
-          'Help unlock the full value of your land or site',
+          'We bring structure to complex development projects by uniting all disciplines — designers, planners, engineers, and contractors — under one cohesive programme',
+          'We manage the day-to-day delivery and strategic decisions that keep your project progressing efficiently, safely, and in line with expectations',
+          'Includes active cost control, sequencing, staging, and coordination of site activities',
         ],
       },
       {
         image: ourServicesPoint,
         title: 'Feasibility & Risk Analysis',
         subPoints: [
-          'Assess whether your idea stacks up before breaking ground',
-          'Flag potential risks early so you can plan with confidence',
-          'Offer smart, practical advice to guide your next move',
-          'Help you weigh up options to get the best outcome',
+          'Before any investment is made, we assess whether your project stacks up — commercially and practically',
+          'We identify potential risks, constraints, and opportunities, then offer smart, experience-based advice to support confident decision-making',
+          'From land use limitations to construction cost variables, we help you weigh up options and define a clear, realistic path forward',
         ],
       },
       {
         image: ourServicesPoint,
         title: 'Design Management',
         subPoints: [
-          'Work closely with designers to make sure plans are practical and cost-effective',
-          'Keep things moving so design delays don’t slow down your build',
-          'Balance creativity with real-world constraints',
-          'Make sure what’s designed can be built — on time and on budget',
+          'Designs need to do more than look good — they need to work on-site, meet budget constraints, and support timely delivery. We manage the entire design process to ensure plans are practical, buildable, and aligned with consent requirements',
+          'Our team keeps momentum high, avoids unnecessary drift, and ensures constructibility is considered from the outset',
         ],
       },
       {
         image: ourServicesPoint,
         title: 'Consent Management',
         subPoints: [
-          'Handle all the paperwork and liaise with councils on your behalf',
-          'Guide you through local rules so you’re never caught off guard',
-          'Stay on top of consent timelines to avoid delays',
-          'Make compliance feel simple, not stressful',
+          'We handle the entire resource and building consent process, preparing documentation, managing council liaison, and tracking approval timeframes',
+          'We guide you through local requirements so you’re never caught off guard, and ensure compliance is integrated — not an afterthought. Our focus is on getting the green light without delays or red tape',
         ],
       },
       {
         image: ourServicesPoint,
         title: 'Consultant Selection & Engagement',
         subPoints: [
-          'Help you find the right people for the job — not just the cheapest',
-          'Set clear expectations from day one',
-          'Take care of scopes, contracts, and negotiations',
-          'Build a strong, reliable project team around your goals',
+          'The right consultants make all the difference. We help you engage trusted professionals — surveyors, planners, engineers, architects, or environmental specialists',
+          'We manage scope, performance, and integration into the wider project. From tender to final delivery, we make sure everyone is working in sync and to the same standard',
         ],
       },
       {
         image: ourServicesPoint,
         title: 'Tendering & Contract Management',
         subPoints: [
-          'Run a transparent, competitive tender process to get the best value',
-          'Help you choose the right contractor, not just the lowest price',
-          'Manage the contract so things stay fair and on track',
-          'Handle variations and claims without the headaches',
+          'We run a clear and competitive tendering process to help you appoint the best-fit contractor — not just the lowest price',
+          'We draft and negotiate fair, robust contracts, then manage them day-to-day to ensure delivery stays aligned with scope and cost',
+          'Our team handles variations, claims, and performance issues early — so they don’t become problems later',
         ],
+      },
+    ],
+  },
+  {
+    html: 'land-development',
+    image: landDevelopment,
+    title: 'Land Development',
+    description: ` We specialise in the necessary expertise for all land development requirements. `,
+    reversed: false,
+    slogan: 'Bring your vision to life',
+    sloganDescription: `We deliver end-to-end land development with structure, clarity, and confidence. From site feasibility and planning through to construction, compliance, and title certification, we manage the entire process with precision.
+
+Whether it’s a two-lot subdivision or a large-scale residential, commercial, or industrial project, we align consultants, contractors, and councils to achieve smooth delivery, regulatory certainty, and long-term value.`,
+    points: [
+      {
+        image: ourServicesPoint,
+        title: 'Feasibility & Due Diligence',
+        description:
+          'Early-stage site assessments to identify risks, constraints, and opportunities — helping you make informed, confident decisions.',
+      },
+      {
+        image: ourServicesPoint,
+        title: 'Concept Planning & Design Coordination',
+        description:
+          'Practical layouts and design coordination — from initial concepts through to detailed engineering ready for consent and construction.',
+      },
+      {
+        image: ourServicesPoint,
+        title: 'Procurement & Delivery Management',
+        description:
+          'Cost estimating, contractor engagement, and construction oversight — ensuring value, capability, and consistent progress from day one.',
+      },
+      {
+        image: ourServicesPoint,
+        title: 'Resource Consent Preparation & Lodgement',
+        description:
+          'Preparation and submission of all required documentation — with clear communication and proactive coordination with councils and stakeholders.',
+      },
+      {
+        image: ourServicesPoint,
+        title: 'Environmental & Planning Compliance',
+        description:
+          'Coordination of environmental impact assessments and planning approvals — supporting smooth consents and future-proofed outcomes.',
+      },
+      {
+        image: ourServicesPoint,
+        title: 'Contract & Project Management',
+        description:
+          'Full oversight of construction contracts, variations, and delivery teams — ensuring the project stays aligned, on time, and on budget.',
+      },
+      {
+        image: ourServicesPoint,
+        title: 'Completion & Title Certification',
+        description:
+          'Final inspections, council approvals, and title documentation — including 223 and 224c certification to enable new titles and complete the development process.',
+      },
+      {
+        image: ourServicesPoint,
+        title: 'Early Planning Strategy & Advice',
+        description:
+          'Upfront guidance on zoning, planning rules, and infrastructure requirements — helping you set a clear, achievable development pathway from the start.',
       },
     ],
   },

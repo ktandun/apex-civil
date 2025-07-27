@@ -16,12 +16,6 @@
 
 <script setup lang="ts">
 import DefaultNavbar from './DefaultNavbar.vue'
-import heroImage from "@/assets/hero.jpg"
-
-// preload hero image
-const img = new Image()
-img.src = heroImage
-
 </script>
 
 <style lang="css" scoped>

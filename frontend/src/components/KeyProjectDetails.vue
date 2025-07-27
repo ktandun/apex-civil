@@ -133,6 +133,7 @@ watch(
         font-weight: var(--font-bold);
         font-size: var(--heading-5);
         color: var(--dark);
+        white-space: pre-wrap;
       }
     }
 
