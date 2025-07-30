@@ -101,10 +101,7 @@ performance in mind.`,
     html: 'project-management',
     image: projectManagement,
     title: 'Project Management',
-    description: `
-    We will manage your civil project with precision.
-    We have managers with decorated and board experience
-    in high profile and high-risk civil infrastructure project.`,
+    description: `We lead complex projects with clarity, structure, and confidence — aligning teams and timelines to ensure nothing gets missed, and everything gets done right.`,
     reversed: true,
     slogan: 'Have clarity and control',
     sloganDescription: `We manage civil projects with structure, foresight, and confidence — taking responsibility for every stage, from feasibility through to handover. Our team brings the systems, experience, and technical capability to coordinate consultants, contractors, and compliance requirements across even the most complex builds.
@@ -178,7 +175,8 @@ Whether you’re delivering a subdivision, commercial site, or infrastructure pa
     html: 'land-development',
     image: landDevelopment,
     title: 'Land Development',
-    description: ` We specialise in the necessary expertise for all land development requirements. `,
+    description: `We manage every phase of land development with clarity and control, delivering
+smart, compliant outcomes across residential, commercial, and industrial projects.`,
     reversed: false,
     slogan: 'Bring your vision to life',
     sloganDescription: `We deliver end-to-end land development with structure, clarity, and confidence. From site feasibility and planning through to construction, compliance, and title certification, we manage the entire process with precision.
