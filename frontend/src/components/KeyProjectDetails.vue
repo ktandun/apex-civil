@@ -1,6 +1,6 @@
 <template>
   <div v-if="keyProject" class="key-project-details">
-    <DefaultBreadcrumb parent="KEY PROJECTS" :title="keyProject.title"></DefaultBreadcrumb>
+    <DefaultBreadcrumb parent="KEY PROJECTS" parentLink="key-projects" :title="keyProject.title"></DefaultBreadcrumb>
 
     <div class="header-img">
       <img :src="keyProject.heroImage" />

@@ -13,14 +13,12 @@
           areas, ensuring that every client’s vision is brought to life with precision and care.
         </p>
       </div>
-      <ArrowLink :link="{ name: 'our-team' }" text="Meet the team" :dark="false"></ArrowLink>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import whoWeAre from '@/assets/who-we-are-1.jpg'
-import ArrowLink from './ArrowLink.vue'
+import whoWeAre from '@/assets/who-we-are.jpg'
 </script>
 
 <style scoped>

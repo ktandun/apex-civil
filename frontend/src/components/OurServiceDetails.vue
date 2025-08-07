@@ -1,6 +1,10 @@
 <template>
   <div v-if="ourService">
-    <DefaultBreadcrumb parent="OUR SERVICES" :title="ourService.title"></DefaultBreadcrumb>
+    <DefaultBreadcrumb
+      parent="OUR SERVICES"
+      parentLink="our-services"
+      :title="ourService.title"
+    ></DefaultBreadcrumb>
     <div class="our-services-subsection">
       <div class="left-right reversed-tablet">
         <div class="right image">

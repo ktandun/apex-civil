@@ -101,44 +101,6 @@ button:hover {
   }
 }
 
-/* breadcrumb */
-.breadcrumb {
-  height: 80px;
-  background-color: var(--dark);
-  color: var(--light);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 8px var(--default-padding);
-
-  & .crumb {
-    font-family: var(--font-ibm);
-    font-size: var(--heading-6);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    img {
-      height: 16px;
-    }
-
-    & .chevron {
-      margin-top: 0.20em;
-    }
-  }
-
-  & .title {
-    font-weight: var(--font-bold);
-    font-size: var(--heading-4);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .breadcrumb {
-    height: 200px;
-    padding: 8px var(--default-padding);
-  }
-}
 
 /* left right */
 .left-right {

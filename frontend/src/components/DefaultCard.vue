@@ -6,19 +6,19 @@
         <div class="title">{{ props.title }}</div>
         <div class="details">
           <div class="point">
-            <span>Service:</span>
-            <span>{{ props.service[0] }}</span>
-          </div>
-          <div class="point">
             <span>Location:</span>
             <span>{{ props.location }}</span>
+          </div>
+          <div class="point">
+            <span>Client:</span>
+            <span>{{ props.client }}</span>
           </div>
         </div>
         <div class="description">
           {{ props.description }}
         </div>
       </div>
-      <ArrowLink text="Read more" dark :link="link"></ArrowLink>
+      <ArrowLink text="See more" dark :link="link"></ArrowLink>
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@ import ArrowLink from './ArrowLink.vue'
 const props = defineProps<{
   image: string[]
   title: string
-  service: string[]
+  client: string
   location: string
   description: string
   link: any

@@ -1,17 +1,19 @@
 <template>
   <!-- featured projects -->
   <div class="featured-projects">
-    <div class="image">
-      <img :src="featuredProjects" />
-    </div>
+    <transition name="fade" mode="out-in">
+      <div class="image" :key="currentProject.title">
+        <img :src="currentProject.heroImage" />
+      </div>
+    </transition>
     <div class="text">
       <div>
         <p class="big-title">Featured Projects</p>
-        <p class="description">ACACIA BAY</p>
+          <p class="description" :key="currentProject.title">{{ currentProject.title }}</p>
         <div class="bullet-points">
           <ArrowLink
             text="Read more"
-            :link="{ name: 'key-project-details', params: { name: 'acacia-bay' } }"
+            :link="{ name: 'key-project-details', params: { name: currentProject.html } }"
             :dark="true"
           ></ArrowLink>
           <ArrowLink
@@ -21,24 +23,54 @@
           ></ArrowLink>
         </div>
       </div>
+
       <div class="arrows">
-        <img :src="chevronLeft" />
-        <img :src="chevronRight" />
+        <img :src="chevronLeft" @click="goPrev" />
+        <img :src="chevronRight" @click="goNext" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import featuredProjects from '@/assets/featured-projects-1.jpeg'
 import chevronLeft from '@/assets/chevron-left.svg'
 import chevronRight from '@/assets/chevron-right.svg'
 import ArrowLink from './ArrowLink.vue'
+import { keyProjects } from './keyProjects'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
+
+const toShow = ref(0)
+let interval = ref(0)
+
+const currentProject = computed(() => {
+  return keyProjects[toShow.value % keyProjects.length]
+})
+
+onMounted(() => {
+  interval.value = setInterval(() => {
+    toShow.value = toShow.value + 1
+  }, 4000)
+})
+
+onUnmounted(() => {
+  clearInterval(interval.value)
+})
+
+const goPrev = () => {
+  toShow.value = (toShow.value + keyProjects.length - 1) % keyProjects.length
+  clearInterval(interval.value)
+}
+
+const goNext = () => {
+  toShow.value = (toShow.value + 1) % keyProjects.length
+  clearInterval(interval.value)
+}
 </script>
 
 <style lang="css" scoped>
 /* Featured Projects */
 .featured-projects {
+  height: 800px;
   background-color: var(--light);
   display: flex;
   flex-direction: column;
@@ -56,6 +88,9 @@ import ArrowLink from './ArrowLink.vue'
   & .text {
     padding: 16px var(--default-padding);
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     & .big-title {
       color: var(--orange);
@@ -93,6 +128,7 @@ import ArrowLink from './ArrowLink.vue'
 
 @media (min-width: 768px) {
   .featured-projects {
+    height: 700px;
     flex-direction: row;
     & .image {
       flex: 2;
@@ -119,9 +155,19 @@ import ArrowLink from './ArrowLink.vue'
 
 @media only screen and (min-width: 1920px) {
   .featured-projects {
+    height: 1000px;
     & .text {
       padding-left: max(120px, 3vw);
     }
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

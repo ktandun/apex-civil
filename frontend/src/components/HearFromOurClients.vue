@@ -48,7 +48,7 @@ const currentTestimonies = computed(() => {
 onMounted(() => {
   interval.value = setInterval(() => {
     toShow.value = toShow.value + 1
-  }, 5000)
+  }, 7000)
 })
 
 onUnmounted(() => {
@@ -59,6 +59,7 @@ onUnmounted(() => {
 <style scoped>
 .hear-from-our-clients {
   background-color: var(--dark);
+  min-height: 510px;
   color: var(--light);
   display: flex;
   flex-direction: column;
@@ -97,6 +98,7 @@ onUnmounted(() => {
 @media only screen and (min-width: 768px) {
   .hear-from-our-clients {
     padding: 120px var(--default-padding);
+    min-height: 350px;
     & .clients {
       flex-direction: row;
       padding: 12px;
