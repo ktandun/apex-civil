@@ -70,7 +70,6 @@ const goNext = () => {
 <style lang="css" scoped>
 /* Featured Projects */
 .featured-projects {
-  height: 800px;
   background-color: var(--light);
   display: flex;
   flex-direction: column;
@@ -87,6 +86,7 @@ const goNext = () => {
 
   & .text {
     padding: 16px var(--default-padding);
+    min-height: 450px;
     flex: 1;
     display: flex;
     flex-direction: column;
