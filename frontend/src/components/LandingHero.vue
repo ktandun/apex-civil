@@ -22,7 +22,7 @@ import DefaultNavbar from './DefaultNavbar.vue'
 /* Hero */
 .hero {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('@/assets/hero.jpg');
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('@/assets/hero-800w.jpg');
 
   background-position: center;
   background-size: cover;
@@ -61,6 +61,9 @@ import DefaultNavbar from './DefaultNavbar.vue'
 
 @media (min-width: 768px) {
   .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('@/assets/hero-1600w.jpg');
+
     & .hero-text-wrapper {
       position: absolute;
       left: 32px;
@@ -75,6 +78,9 @@ import DefaultNavbar from './DefaultNavbar.vue'
 
 @media (min-width: 1440px) {
   .hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('@/assets/hero-2400w.jpg');
+
     & .hero-text-wrapper {
       left: max(120px, 15vw);
     }

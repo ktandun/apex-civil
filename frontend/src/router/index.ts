@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -44,6 +44,8 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     // Always scroll to top
     document.getElementById('navbar')?.scrollIntoView({ behavior: 'smooth' })
+
+    return { top: 0, left: 0 }
   },
 })
 

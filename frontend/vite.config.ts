@@ -5,9 +5,17 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
-export default defineConfig(({ command }) => {
+export default defineConfig(({ command, mode }) => {
+  let base = '/'
+
+  console.log(mode)
+
+  if (command === 'build' && mode === 'staging') {
+    base = '/waikato-drilling/'
+  }
+
   return {
-    base: command === 'build' ? '/apex-civil/' : '/',
+    base,
     plugins: [vue(), vueDevTools()],
     resolve: {
       alias: {

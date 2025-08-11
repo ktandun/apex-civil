@@ -1,4 +1,4 @@
-import taraweraLanding from '@/assets/hero.jpg'
+import taraweraLanding from '@/assets/hero-1600w.jpg'
 import taraweraLandingHero from '@/assets/tarawera-landing-hero.jpg'
 import acaciaBayHero from '@/assets/acacia-bay-hero.jpg'
 import acaciaBay from '@/assets/featured-projects-1.jpeg'

@@ -1,7 +1,7 @@
 import ourServicesPoint from '@/assets/our-services-point.svg'
-import landDevelopment from '@/assets/land-development.jpg'
-import civilConstruction from '@/assets/civil-construction.jpg'
-import projectManagement from '@/assets/project-management.jpg'
+import landDevelopment from '@/assets/land-development-1200w.jpg'
+import civilConstruction from '@/assets/civil-construction-1200w.jpg'
+import projectManagement from '@/assets/project-management-1200w.jpg'
 
 export type OurService = {
   html: string

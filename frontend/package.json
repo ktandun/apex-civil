@@ -6,10 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "build-only": "vite build",
+    "build:prod": "run-p type-check \"build-only {@}\" --",
+    "build-only": "vite build --mode=staging",
+    "build-only:prod": "vite build --mode=prod",
+    "deploy": "npm run build && gh-pages -d dist",
+    "deploy:prod": "npm run build:prod && gh-pages -d dist",
     "type-check": "vue-tsc --build",
-    "deploy": "gh-pages -d dist",
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
     "format": "prettier --write src/"
   },
   "dependencies": {
