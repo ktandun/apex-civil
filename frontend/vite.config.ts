@@ -11,7 +11,7 @@ export default defineConfig(({ command, mode }) => {
   console.log(mode)
 
   if (command === 'build' && mode === 'staging') {
-    base = '/waikato-drilling/'
+    base = '/apex-civil/'
   }
 
   return {
