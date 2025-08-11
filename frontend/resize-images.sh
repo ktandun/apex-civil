@@ -11,7 +11,7 @@ fi
 
 INPUT="$1"
 OUTPUT_DIR="./src/assets"
-SIZES=(800 1200 1600)
+SIZES=(1400)
 
 # Get filename without extension and extension separately
 FILENAME=$(basename -- "$INPUT")
@@ -21,7 +21,7 @@ EXT="${FILENAME##*.}"
 # Loop over sizes and create resized images
 for WIDTH in "${SIZES[@]}"; do
   OUTPUT_FILE="${OUTPUT_DIR}/${BASENAME}-${WIDTH}w.${EXT}"
-  convert "$INPUT" -resize "${WIDTH}" "$OUTPUT_FILE"
+  magick "$INPUT" -resize "${WIDTH}" -strip "$OUTPUT_FILE"
   echo "✅ Created $OUTPUT_FILE"
 done
 

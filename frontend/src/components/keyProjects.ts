@@ -18,11 +18,11 @@ import carters3 from '@/assets/carters-3.jpg'
 import carters4 from '@/assets/carters-4.jpg'
 import carters5 from '@/assets/carters-5.jpg'
 
-import cartersThumbnail from '@/assets/carters-2-1000w.jpg'
-import taniaCrescentThumbnail from '@/assets/tania-crescent-subdivision-2-1000w.jpg'
-import marshallRoadThumbnail from '@/assets/marshall-road-2-1000w.jpg'
-import taraweraLandingThumbnail from '@/assets/tarawera-landing-hero-1000w.jpg'
-import acaciaBayThumbnail from '@/assets/acacia-bay-hero-1000w.jpg'
+import cartersThumbnail from '@/assets/carters-2-1200w.jpg'
+import taniaCrescentThumbnail from '@/assets/tania-crescent-subdivision-2-1200w.jpg'
+import marshallRoadThumbnail from '@/assets/marshall-road-2-1200w.jpg'
+import taraweraLandingThumbnail from '@/assets/tarawera-landing-hero-1200w.jpg'
+import acaciaBayThumbnail from '@/assets/acacia-bay-hero-1200w.jpg'
 
 export type KeyProject = {
   html: string
