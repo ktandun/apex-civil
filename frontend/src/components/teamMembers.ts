@@ -1,8 +1,8 @@
-import luke from '@/assets/luke-rainford.png'
-import kurt from '@/assets/kurt-petherick.png'
-import darrin from '@/assets/darrin-archer.png'
-import pauline from '@/assets/pauline-harwood.png'
-import clefford from '@/assets/darrin-archer.png'
+import luke from '@/assets/luke-rainford-1600w.png'
+import kurt from '@/assets/kurt-petherick-1600w.png'
+import darrin from '@/assets/darrin-archer-1600w.png'
+import pauline from '@/assets/pauline-harwood-1600w.png'
+import clefford from '@/assets/darrin-archer-1600w.png'
 
 export type TeamMember = {
   directors: TeamMemberProfile[]

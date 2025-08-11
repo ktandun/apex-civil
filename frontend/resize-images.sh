@@ -1,28 +1,25 @@
 #!/bin/bash
 
-# Exit if any command fails
-set -e
+width=2000
 
-# Check args
-if [ "$#" -lt 1 ]; then
-  echo "Usage: $0 <image-file>"
-  exit 1
-fi
+# Ensure using bash
+shopt -s extglob
 
-INPUT="$1"
-OUTPUT_DIR="./src/assets"
-SIZES=(1400)
+find ./src -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) \
+	! -iname "*-w.jpg" \
+	! -iname "*-w.jpeg" \
+	! -iname "*-w.png" | while IFS= read -r file; do
 
-# Get filename without extension and extension separately
-FILENAME=$(basename -- "$INPUT")
-BASENAME="${FILENAME%.*}"
-EXT="${FILENAME##*.}"
+	size_bytes=$(stat -f%z "$file") # macOS stat
+	size_mb=$((size_bytes / 1024 / 1024))
 
-# Loop over sizes and create resized images
-for WIDTH in "${SIZES[@]}"; do
-  OUTPUT_FILE="${OUTPUT_DIR}/${BASENAME}-${WIDTH}w.${EXT}"
-  magick "$INPUT" -resize "${WIDTH}" -strip "$OUTPUT_FILE"
-  echo "✅ Created $OUTPUT_FILE"
+	if ((size_mb > 5)); then
+		echo "File: $file ($size_mb MB)"
+		ext="${file##*.}"
+		base="${file%.*}"
+		output="${base}-${width}w.${ext}"
+
+		magick "$file" -resize "${width}" "$output"
+		echo "Resized -> $output"
+	fi
 done
-
-echo "🎉 All images generated successfully."
