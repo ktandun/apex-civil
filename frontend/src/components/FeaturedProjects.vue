@@ -3,13 +3,13 @@
   <div class="featured-projects">
     <transition name="fade" mode="out-in">
       <div class="image" :key="currentProject.title">
-        <img :src="currentProject.heroImage" />
+        <img :src="currentProject.thumbnailImage" />
       </div>
     </transition>
     <div class="text">
       <div>
         <p class="big-title">Featured Projects</p>
-          <p class="description" :key="currentProject.title">{{ currentProject.title }}</p>
+        <p class="description" :key="currentProject.title">{{ currentProject.title }}</p>
         <div class="bullet-points">
           <ArrowLink
             text="Read more"
@@ -50,6 +50,14 @@ onMounted(() => {
   interval.value = setInterval(() => {
     toShow.value = toShow.value + 1
   }, 4000)
+
+  // preload images
+  keyProjects
+    .map((kp) => kp.thumbnailImage)
+    .forEach((img) => {
+      const i = new Image()
+      i.src = img
+    })
 })
 
 onUnmounted(() => {

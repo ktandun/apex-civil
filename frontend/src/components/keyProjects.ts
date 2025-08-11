@@ -18,9 +18,16 @@ import carters3 from '@/assets/carters-3.jpg'
 import carters4 from '@/assets/carters-4.jpg'
 import carters5 from '@/assets/carters-5.jpg'
 
+import cartersThumbnail from '@/assets/carters-2-1000w.jpg'
+import taniaCrescentThumbnail from '@/assets/tania-crescent-subdivision-2-1000w.jpg'
+import marshallRoadThumbnail from '@/assets/marshall-road-2-1000w.jpg'
+import taraweraLandingThumbnail from '@/assets/tarawera-landing-hero-1000w.jpg'
+import acaciaBayThumbnail from '@/assets/acacia-bay-hero-1000w.jpg'
+
 export type KeyProject = {
   html: string
   heroImage: string
+  thumbnailImage: string
   image: string[]
   title: string
   service: string[]
@@ -34,6 +41,7 @@ export const keyProjects: KeyProject[] = [
   {
     html: 'tarawera-landing',
     heroImage: taraweraLandingHero,
+    thumbnailImage: taraweraLandingThumbnail,
     image: [taraweraLanding, taraweraLanding, taraweraLanding],
     title: 'Tarawera Landing Upgrade',
     service: ['Design & Build', 'Earthworks', 'Civil Design Management'],
@@ -49,6 +57,7 @@ The scope also included significant sediment control measures to protect the lak
     html: 'acacia-bay',
     image: [acaciaBay, acaciaBay2, acaciaBay3],
     heroImage: acaciaBayHero,
+    thumbnailImage: acaciaBayThumbnail,
     title: 'Acacia Bay',
     service: ['Design & Engineering Management', 'Drainage & Water Reticulation', 'Earthworks'],
     location: 'Acacia Bay, Taupō',
@@ -65,6 +74,7 @@ This project demonstrates Apex Civil’s ability to lead both the design and con
     html: 'marshall-road',
     image: [marshallRoad1, marshallRoad3, marshallRoad4],
     heroImage: marshallRoad2,
+    thumbnailImage: marshallRoadThumbnail,
     title: 'Marshall Road',
     service: ['Project management, civil engineering'],
     location: 'Marshall Road, Katikati',
@@ -81,6 +91,7 @@ Retaining walls and landscaping works were also delivered as part of the finishe
     html: 'tania-crescent-subdivision',
     image: [taniaCrescent1, taniaCrescent3, taniaCrescent4],
     heroImage: taniaCrescent2,
+    thumbnailImage: taniaCrescentThumbnail,
     title: 'Tania Crescent Subdivision',
     service: [],
     location: 'Tania Crescent, Rotorua',
@@ -99,6 +110,7 @@ construction footprints.`,
     html: 'carters-trade-centre',
     image: [carters1, carters3, carters4, carters5],
     heroImage: carters2,
+    thumbnailImage: cartersThumbnail,
     title: 'Carters Trade Centre',
     service: [],
     location: 'Broadlands Road, Taupō',
