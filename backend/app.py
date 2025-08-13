@@ -48,7 +48,7 @@ def home():
     return "OK"
 
 
-@crontab.job(minute="*", hour="*")
+@crontab.job(minute="*/15")
 def find_queries_and_email():
     files = list(Path(".").glob("query-*.txt"))
 
