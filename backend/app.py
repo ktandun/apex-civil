@@ -111,4 +111,5 @@ def send_email(name, email, message, source):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
+    app.run(debug=True, ssl_context=('cert.pem', 'key.pem'))
