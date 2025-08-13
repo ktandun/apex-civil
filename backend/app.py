@@ -16,7 +16,14 @@ EMAIL_USERNAME = os.getenv("EMAIL_USERNAME", "default_value")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD", "default_value")
 
 app = Flask(__name__)
-CORS(app, resources={r"/": {"origins": "https://ktandun.github.io"}})
+CORS(app, resources={
+    r"/*": {
+        "origins": [
+            "https://ktandun.github.io",
+            "http://localhost:5173"
+        ]
+    }
+})
 crontab = Crontab(app)
 
 
@@ -66,20 +73,20 @@ def find_queries_and_email():
                 processed_files.append(f)
 
             except json.JSONDecodeError as e:
-                print(f"❌ Error parsing {f.name}: {e}")
+                print(f"Error parsing {f.name}: {e}")
 
     for f in processed_files:
         new_name = f.with_name(f.stem + "-processed" + f.suffix)
 
         f.rename(new_name)
-        print(f"✅ Renamed: {f.name} → {new_name.name}")
+        print(f"Renamed: {f.name} → {new_name.name}")
 
 
 def send_email(name, email, message, source):
     msg = MIMEText(f"""
-        Received query 
+        Received query
         From: {name}
-        Email: {email} 
+        Email: {email}
         Message: {message}
         """)
 
@@ -98,9 +105,9 @@ def send_email(name, email, message, source):
             server.starttls()  # Secure the connection
             server.login(username, password)
             server.send_message(msg)
-            print("✅ Email sent successfully!")
+            print("Email sent successfully!")
     except Exception as e:
-        print(f"❌ Failed to send email: {e}")
+        print(f"Failed to send email: {e}")
 
 
 if __name__ == "__main__":
