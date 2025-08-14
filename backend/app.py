@@ -48,7 +48,7 @@ def home():
     return "OK"
 
 
-@crontab.job(minute="*/15")
+@crontab.job(minute="*/5")
 def find_queries_and_email():
     files = list(Path(".").glob("query-*.txt"))
 
@@ -92,7 +92,7 @@ def send_email(name, email, message, source):
 
     msg["Subject"] = f"{source} query from {name}"
     msg["From"] = "Query Notifier"
-    msg["To"] = "nudnateiznek@gmail.com"
+    msg["To"] = "enquires@waikatodrilling.co.nz"
 
     # SMTP server settings (example: Gmail)
     smtp_server = "smtp.gmail.com"
