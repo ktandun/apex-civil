@@ -9,11 +9,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from pathlib import Path
 from flask_crontab import Crontab
-import os
-
-# Get the value of MY_VAR, or "default_value" if not set
-EMAIL_USERNAME = os.getenv("EMAIL_USERNAME", "default_value")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD", "default_value")
+from config import *
 
 app = Flask(__name__)
 CORS(app, resources={
@@ -92,7 +88,7 @@ def send_email(name, email, message, source):
 
     msg["Subject"] = f"{source} query from {name}"
     msg["From"] = "Query Notifier"
-    msg["To"] = "enquires@waikatodrilling.co.nz"
+    msg["To"] = "enquiries@waikatodrilling.co.nz"
 
     # SMTP server settings (example: Gmail)
     smtp_server = "smtp.gmail.com"
