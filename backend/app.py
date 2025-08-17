@@ -16,6 +16,9 @@ CORS(app, resources={
     r"/*": {
         "origins": [
             "https://ktandun.github.io",
+            "https://staging.waikatodrilling.co.nz",
+            "https://waikatodrilling.co.nz",
+            "https://www.waikatodrilling.co.nz",
             "http://localhost:5173"
         ]
     }
