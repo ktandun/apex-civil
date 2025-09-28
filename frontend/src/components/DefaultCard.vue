@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" @click="$router.push(link)">
     <img class="card-image" :src="image[0]" />
     <div class="card-body">
       <div class="card-content">
@@ -44,6 +44,14 @@ const props = defineProps<{
   border-radius: var(--border-radius);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+
+  }
 
   & .card-image {
     width: 100%;

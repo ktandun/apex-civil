@@ -8,7 +8,7 @@
         <div class="title">Contact</div>
         <div class="point">
           <img :src="locationMarker" />
-          <p>40A Invergarry Road, Taupō 3330, New Zealand</p>
+          <p>106 Vaughan Road, Ngapuna, Rotorua 3010, NEW ZEALAND</p>
         </div>
         <div class="point">
           <img :src="mail" />
@@ -30,7 +30,7 @@
       <div class="links">
         <router-link :to="{ name: 'our-services' }"  tag="a">Our Services</router-link>
         <router-link :to="{ name: 'key-projects' }"  tag="a">Key Projects</router-link>
-        <router-link :to="{ name: 'our-team' }" tag="a" >Our Team</router-link>
+        <!-- <router-link :to="{ name: 'our-team' }" tag="a" >Our Team</router-link> -->
         <a href="#">Contact Us</a>
       </div>
       <div class="footer-logos">

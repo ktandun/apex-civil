@@ -1,6 +1,7 @@
 <template>
   <DefaultBreadcrumb title="Leadership Team"></DefaultBreadcrumb>
-  <div class="our-team">
+  Placeholder
+  <!-- <div class="our-team">
     <div class="team-group">
       <TeamMemberCard
         v-for="teamMember in teamMembers.directors"
@@ -21,7 +22,7 @@
         :description="teamMember.description"
       ></TeamMemberCard>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup lang="ts">

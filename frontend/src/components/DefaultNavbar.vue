@@ -7,10 +7,25 @@
         </picture>
       </router-link>
       <div class="flex nav-links">
-        <router-link :to="{ name: 'our-services' }" class="nav-link">Our Services</router-link>
-        <router-link :to="{ name: 'key-projects' }" class="nav-link">Key Projects</router-link>
-        <router-link :to="{ name: 'our-team' }" class="nav-link">Our Team</router-link>
-        <router-link :to="{ name: 'contact-us' }" class="nav-link">Contact Us</router-link>
+        <router-link
+          :class="{ active: route.name === 'our-services' }"
+          :to="{ name: 'our-services' }"
+          class="nav-link"
+          >Our Services</router-link
+        >
+        <router-link
+          :class="{ active: route.name === 'key-projects' }"
+          :to="{ name: 'key-projects' }"
+          class="nav-link"
+          >Key Projects</router-link
+        >
+        <!-- <router-link :to="{ name: 'our-team' }" class="nav-link">Our Team</router-link> -->
+        <router-link
+          :class="{ active: route.name === 'contact-us' }"
+          :to="{ name: 'contact-us' }"
+          class="nav-link"
+          >Contact Us</router-link
+        >
         <a @click="toggleNav" class="hamburger-menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +46,7 @@
     <div class="nav-links-mobile">
       <router-link :to="{ name: 'our-services' }">Our Services</router-link>
       <router-link :to="{ name: 'key-projects' }">Key Projects</router-link>
-      <router-link :to="{ name: 'our-team' }">Our Team</router-link>
+      <!-- <router-link :to="{ name: 'our-team' }">Our Team</router-link> -->
       <router-link :to="{ name: 'contact-us' }">Contact Us</router-link>
     </div>
   </div>
@@ -39,6 +54,10 @@
 
 <script lang="ts" setup>
 import logo from '@/assets/logo.svg'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
 const toggleNav = () => {
   const navLinksMobile = document.querySelector('.nav-links-mobile')
   navLinksMobile?.classList.toggle('open')
@@ -64,8 +83,19 @@ const toggleNav = () => {
     padding: 16px;
 
     & a {
-      color: var(--light);
+      color: var(--grey);
       text-decoration: none;
+    }
+
+    & a.active {
+      font-weight: 700;
+      color: var(--light);
+    }
+
+    & a:hover {
+      font-weight: 700;
+      color: var(--light);
+      text-decoration: underline;
     }
 
     & img {

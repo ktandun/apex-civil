@@ -30,11 +30,11 @@ const router = createRouter({
       component: () => import('@/views/KeyProjectDetailsView.vue'),
       props: true,
     },
-    {
-      path: '/our-team',
-      name: 'our-team',
-      component: () => import('@/views/OurTeamView.vue'),
-    },
+    // {
+    //   path: '/our-team',
+    //   name: 'our-team',
+    //   component: () => import('@/views/OurTeamView.vue'),
+    // },
     {
       path: '/contact-us',
       name: 'contact-us',
