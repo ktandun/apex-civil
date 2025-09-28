@@ -1,4 +1,6 @@
 import taraweraLanding from '@/assets/hero-1600w.jpg'
+import taraweraLanding2 from '@/assets/tarawera-landing-2-2000w.jpg'
+import taraweraLanding3 from '@/assets/tarawera-landing-3-2000w.png'
 import taraweraLandingHero from '@/assets/tarawera-landing-hero-2000w.jpg'
 import acaciaBayHero from '@/assets/acacia-bay-hero-2000w.jpg'
 import acaciaBay from '@/assets/featured-projects-1-2000w.jpeg'
@@ -12,7 +14,6 @@ import taniaCrescent1 from '@/assets/tania-crescent-subdivision-1-2000w.jpg'
 import taniaCrescent2 from '@/assets/tania-crescent-subdivision-2-2000w.jpg'
 import taniaCrescent3 from '@/assets/tania-crescent-subdivision-3-2000w.jpg'
 import taniaCrescent4 from '@/assets/tania-crescent-subdivision-4-2000w.jpg'
-import carters1 from '@/assets/carters-1.jpg'
 import carters2 from '@/assets/carters-2-2000w.jpg'
 import carters3 from '@/assets/carters-3-2000w.jpg'
 import carters4 from '@/assets/carters-4-2000w.jpg'
@@ -42,7 +43,7 @@ export const keyProjects: KeyProject[] = [
     html: 'tarawera-landing',
     heroImage: taraweraLandingHero,
     thumbnailImage: taraweraLandingThumbnail,
-    image: [taraweraLanding, taraweraLanding, taraweraLanding],
+    image: [taraweraLanding, taraweraLanding2, taraweraLanding3],
     title: 'Tarawera Landing Upgrade',
     service: ['Design & Build', 'Earthworks', 'Civil Design Management'],
     location: 'Lake Tarawera, Rotorua',
@@ -75,7 +76,7 @@ This project demonstrates Apex Civil’s ability to lead both the design and con
     image: [marshallRoad1, marshallRoad3, marshallRoad4],
     heroImage: marshallRoad2,
     thumbnailImage: marshallRoadThumbnail,
-    title: 'Marshall Road',
+    title: 'Marshall Road Urbanisation Project',
     service: ['Project management, civil engineering'],
     location: 'Marshall Road, Katikati',
     description:
@@ -108,7 +109,7 @@ construction footprints.`,
   },
   {
     html: 'carters-trade-centre',
-    image: [carters1, carters3, carters4, carters5],
+    image: [carters3, carters4, carters5],
     heroImage: carters2,
     thumbnailImage: cartersThumbnail,
     title: 'Carters Trade Centre',
