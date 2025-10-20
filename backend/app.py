@@ -12,18 +12,21 @@ from flask_crontab import Crontab
 from config import *
 
 app = Flask(__name__)
-CORS(app, resources={
-    r"/*": {
-        "origins": [
-            "https://ktandun.github.io",
-            "https://staging.waikatodrilling.co.nz",
-            "https://waikatodrilling.co.nz",
-            "https://www.waikatodrilling.co.nz",
-            "https://www.apexcivil.co.nz",
-            "http://localhost:5173"
-        ]
-    }
-})
+CORS(
+    app,
+    resources={
+        r"/*": {
+            "origins": [
+                "https://ktandun.github.io",
+                "https://staging.waikatodrilling.co.nz",
+                "https://waikatodrilling.co.nz",
+                "https://www.waikatodrilling.co.nz",
+                "https://www.apexcivil.co.nz",
+                "http://localhost:5173",
+            ]
+        }
+    },
+)
 crontab = Crontab(app)
 
 
@@ -83,16 +86,22 @@ def find_queries_and_email():
 
 
 def send_email(name, email, message, source):
-    msg = MIMEText(f"""
+    msg = MIMEText(
+        f"""
         Received query
         From: {name}
         Email: {email}
         Message: {message}
-        """)
+        """
+    )
 
     msg["Subject"] = f"{source} query from {name}"
     msg["From"] = "Query Notifier"
-    msg["To"] = "enquiries@waikatodrilling.co.nz"
+    msg["To"] = (
+        "enquiries@waikatodrilling.co.nz"
+        if source == "Waikato Drilling"
+        else "enquiries@apexcivil.co.nz"
+    )
 
     # SMTP server settings (example: Gmail)
     smtp_server = "smtp.gmail.com"
