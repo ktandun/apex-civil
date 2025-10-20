@@ -1,0 +1,49 @@
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-ibm: 'IBM Plex Sans', sans-serif;
+
+  --font-bold: 700;
+  --font-semibold: 600;
+
+  --primary: #2860a2;
+  --dark: #0d1a3a;
+  --light: #fffdfa;
+  --grey: #a1a1a1;
+  --orange: #ff7b31;
+  --granite: #19282f;
+
+  --heading-1: min(58px, calc(9vw));
+  --heading-2: min(48px, calc(13vw));
+  --heading-3: min(40px, calc(7vw));
+  --heading-4: min(34px, calc(6vw));
+  --heading-5: min(20px, calc(5vw));
+  --heading-6: min(18px, calc(4vw));
+  --heading-7: min(16px, calc(3vw));
+
+  --padding-mobile: 16px;
+  --padding-tablet: 36px;
+  --padding-desktop: 120px;
+  --padding-desktop-wide: max(120px, 15vw);
+
+  --border-radius: 18px;
+
+  --default-padding: var(--padding-mobile);
+}
+
+@media only screen and (min-width: 768px) {
+  * {
+    --default-padding: var(--padding-tablet);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  * {
+    --default-padding: var(--padding-desktop);
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  * {
+    --default-padding: var(--padding-desktop-wide);
+  }
+}

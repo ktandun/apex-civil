@@ -19,6 +19,7 @@ CORS(app, resources={
             "https://staging.waikatodrilling.co.nz",
             "https://waikatodrilling.co.nz",
             "https://www.waikatodrilling.co.nz",
+            "https://www.apexcivil.co.nz",
             "http://localhost:5173"
         ]
     }
